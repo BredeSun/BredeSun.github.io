@@ -1,0 +1,216 @@
+body {
+    
+    margin: 0;
+    
+}
+
+/*---------------------------------------------------Seksjon------------------------------------------------------------------*/
+
+
+.Reservation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    font-family: Montserrat, Times, serif;
+    
+    
+}
+
+/*-------------------------------------------------Venstre side-----------------------------------------------------------------------*/
+
+.RegInfo {
+
+    position: relative;
+    color: white;
+    margin-top: 80px;
+    margin-left: 80px;
+    width: 550px;
+    height: 550px;
+}
+
+.RegInfo h1 {
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+.RegInfo p {
+    background-color: black;
+    color: white;
+    width: 250px;
+    margin-left: 20px;
+    text-align: left;
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+
+
+
+
+/*--------------------------------------------------Utfyllingsskjema--------------------------------------------------------------------------*/
+
+.RegSkjema {
+    position: relative;
+    flex-shrink: 1px;
+    left: 20%;
+    top: 90px;
+    width: 500px;
+    height: 550px;
+    padding-top: 5px;
+    padding-left: 5px;
+    color: white;
+}
+
+.RegSkjema fieldset {
+    background-color: black;
+    border-color: rgb(160, 80, 23);
+    border-radius: 5px;
+}
+
+.RegSkjema label {
+    margin-left: 15px;
+}
+
+.RegSkjema input {
+    border-radius: 7px;
+}
+
+#gjester {
+
+    width: 40px;
+}
+
+.RegSkjema textarea {
+    border-radius: 7px;
+}
+
+
+
+/*------------------------------------------------- Mobil S -----------------------------------------------------------------------*/
+@media all and (max-width: 320px) {
+
+    .RegInfo {
+        margin-left: 0;
+        left: 5%;
+        height: fit-content;
+
+    }
+
+    .RegInfo p {
+        padding: 5px 5px 5px 5px;
+    }
+
+
+    .RegSkjema {
+        width: fit-content;
+        top: 30px;
+        left: 0.5px;
+        margin-bottom: 2px;
+    }
+}
+
+/*------------------------------------------------- Mobil M -----------------------------------------------------------------------*/
+
+@media all and (max-width: 375px) {
+
+    .RegInfo {
+        margin-left: 0;
+        left: 2%;
+        height: fit-content;
+
+    }
+
+    .RegInfo p {
+        padding: 2px 2px 2px 2px;
+    }
+
+
+    .RegSkjema {
+        width: fit-content;
+        margin-left: 2px;
+        margin: auto;
+        margin-bottom: 2px;
+    }
+
+}
+
+/*------------------------------------------------- Mobil L -----------------------------------------------------------------------*/
+
+@media all and (max-width: 425px) {
+    .RegInfo {
+        margin-left: 0;
+        left: 2%;
+        height: fit-content;
+
+    }
+
+    .RegInfo p {
+        padding: 2px 2px 2px 2px;
+    }
+
+
+    .RegSkjema {
+        left: 5px;
+        width: fit-content;
+        margin: auto;
+    }
+
+}
+
+/*------------------------------------------------- Tablet -----------------------------------------------------------------------*/
+@media all and (max-width: 768px) {
+    .RegInfo {
+        margin-left: 0;
+        left: 2%;
+        height: fit-content;
+
+    }
+
+    .RegInfo p {
+        padding: 2px 2px 2px 2px;
+    }
+
+
+    .RegSkjema {
+        width: 550px;
+        left: 10px;
+
+        margin: auto;
+    }
+}
+
+/*------------------------------------------------- Laptop -----------------------------------------------------------------------*/
+@media all and (max-width: 1024px) {
+    .RegInfo {
+        margin-left: 0;
+        margin-right: 0;
+        left: 2%;
+        height: fit-content;
+        width: fit-content;
+
+    }
+
+    .RegInfo p {
+        padding: 2px 2px 2px 2px;
+    }
+
+
+    .RegSkjema {
+        width: 550px;
+        top: 200px;
+        left: 70px;
+        margin: auto;
+    }
+}
+
+/*------------------------------------------------- Laptop L -----------------------------------------------------------------------*/
+@media all and (max-width: 1440px) {}
+
+/*------------------------------------------------- 4K -----------------------------------------------------------------------*/
+@media all and (max-width: 2560px) {
+
+    .RegInfo p {
+
+        padding: 2px 2px 2px 2px;
+    }
+
+}

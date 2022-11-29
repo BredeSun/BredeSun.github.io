@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"></linkspacerel>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Wire+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>
+
+</head>
+
+<body>
+    <!--  MENYEN: ------------------------------------------------------------------------------------->
+
+    <section class="Meny">
+    <!--  Menyen: navbar ----------------------------------------------------------------------------------------------->
+    <nav class="Navbaren">
+        <ul class="menu">
+            <li class="logo"><a href="index.html">La Marias()</a></li>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="Meny.html">Meny</a></li>
+            <li class="item"><a href="Reservations.html">Reserve a table</a></li>
+            <li class="item"><a href="#">About us</a></li>
+            </li>
+            <li class="item button"><a href="#">Data1100</a></li>
+            <li class="item button secondary"><a href="#">ShowOff?</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    
+    <!--  Menyen: teksten på bildet----------------------------------------------------------------------------------------------->
+
+    <div class="MenyenBilde"> 
+        <h1 id = MenyOverskriftBilde> MENY</h1>
+        <h3 id= "MenyUnderoverskriftBilde">
+            The mission is simple: serve delicious, affordable food
+        </br>
+            that guests will want to return to week after week.
+        </h3>
+    </div>
+
+    <!--  Menyen: rettene ----------------------------------------------------------------------------------------------->
+    <div class="MenyenRetter">
+
+    <!-- Menyen: forretter ---------------->
+        <div class= "MenyOverskriftTo"> 
+            <h1 class>FORRETTER</h1> 
+        </div>
+        
+        <div class= "MenyContainer">
+            <div class = "MenyContainerBoks">
+                <h3>Focaccia vegetariano</h3>
+                <p>
+                <br/>focaccia, pesto rosso, pesto genovese, aioli<br/>
+                <br/>(egg, hvete, melk, pinjekjerne, sennep, svoveldioksid og sulfitt)<br/>
+                </p>  
+            </div>
+
+            <div class = "MenyContainerBoks">
+                <h3>Mozzarella di burrata vegetariano</h3>
+                <p>
+                <br/>cherrytomater, confiterte tomater, balsamico, 
+                burrata di mozzarella, basilikumolje, focaccia<br/>
+                <br/>(hvete, melk, svoveldioksid og sulfitt)<br/>
+                </p>
+            </div>
+            
+            <div class = "MenyContainerBoks">
+                <h3>Salumi e Parmigiano Reggiano </h3>
+                <p>
+                <br/>Salumi e Parmigiano Reggiano <br/>
+                <br/>(melk, egg, svoveldioksid og sulfitt)<br/>
+                </p>
+            </div>
+        </div>
+
+    <!-- Menyen: hovedretter ---------------->
+
+        <div class= "MenyOverskriftTo"> 
+            <h1>HOVEDRETTER</h1> 
+        </div>
+
+        <div class= "MenyContainer">
+            <div class = "MenyContainerBoks">
+                <h3>Mare e monti</h3>
+                <p>
+                <br/>chili- og hvitløksmarinert scampi, crème fraîche,
+                krydret pølse, blandet sopp<br/>
+                <br/>(hvete, melk, skalldyr)<br/>
+                </p> 
+            </div>
+
+            <div class = "MenyContainerBoks">
+                <h3>Primavera Salad</h3>
+                <p>
+                <br/>arugula, cherry tomato, shaved almonds,
+                shallot vinaigrette<br/>
+                <br/>(Allergerner)<br/>
+                </p>
+            </div>
+            
+            <div class = "MenyContainerBoks">
+                <h3>Mozzarella di burrata vegetariano</h3>
+                <p>
+                <br/>tomat, mozzarella di burrata, mozzarella,
+                 cherrytomater, ruccola<br/>
+                <br/>(hvete, melk)<br/>
+            </div>
+        </div>
+
+        <div class= "MenyContainer">
+            <div class = "MenyContainerBoks">
+                <h3>Penne al pollo ubriaco </h3>
+                <p>
+                <br/>penne, kylling, bacon, tomat, 
+                basilikum, chili, fløte<br/>
+                <br/>(hvete, melk)<br/>
+                </p>  
+            </div>
+
+            <div class = "MenyContainerBoks">
+                <h3>Ravioli con funghi vegetariano</h3>
+                <p>
+                <br/>ravioli fylt med steinsopp, kremet hvitvinssaus, 
+                smørstekt sopp, parmesan, trøffelolje, ruccola<br/>
+                <br/>(egg, hvete, melk, selleri, soya, svoveldioksid og sulfit)<br/>
+                </p>
+            </div>
+            
+            <div class = "MenyContainerBoks">
+                <h3>Merluzzo con lenticchie </h3>
+                <p>
+                <br/>torsk, puy linser, pancetta, grønnkål, 
+                soltørkede cherrytomater og sitronsmør<br/>
+                <br/>(fisk, melk, selleri, svoveldioksid og sulfitt)<br/>
+                </p>
+            </div>
+        </div>
+     
+    <!-- Menyen: dessert---------------->    
+
+        <div class= "MenyOverskriftTo"> 
+            <h1>DEESSERT</h1> 
+        </div>
+
+        <div class= "MenyContainer">
+            <div class = "MenyContainerBoks">
+                <h3>Soufflè al cioccolato</h3>
+                <p>
+                <br/>italiensk sjokoladefondant med 
+                bringebærcoulis og vaniljeis<br/>
+                <br/>(egg, hvete, melk)<br/>
+                </p>  
+            </div>
+
+            <div class = "MenyContainerBoks">
+                <h3>Affogato al caffè </h3>
+                <p>
+                <br/>vaniljeis, varm espresso og mørk sjokolade<br/>
+                <br/>(egg, melk)<br/>
+                </p>
+            </div>
+            
+            <div class = "MenyContainerBoks">
+                <h3>Panna cotta </h3>
+                <p>
+                <br/>klassisk fløte- og vaniljedessert med
+                 marinerte bjørnebær og bringebærcoulis<br/>
+                <br/>(melk)<br/>
+                </p>
+            </div>
+        </div>
+  
+    </div>
+    </section>
+</body>
+</html>
