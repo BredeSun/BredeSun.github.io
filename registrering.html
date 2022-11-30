@@ -8,18 +8,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Wire+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/1d55745764.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/1d55745764.js" crossorigin="anonymous"></script>
+        <script>
+            $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+            });
+            function validateForm() {
+                let x = document.forms["myForm"]["fname"].value;
+                if (x == "") {
+                  alert("Name must be filled out");
+                  return false;
+                }
+            };
+        </script>
     <title> Reservere Bord </title>
 </head>
-<body style="background-color: black; background-image: url(Bilder/resturant_reg.webp);">
+<body style="background-color: black;">
 
     <div class="Reservation">
                                 <!-- Venstre side-->
 
-
-    <div class="ikon_reg">
-        <p><i class="fa-solid fa-arrow-left-long fa-2xl"></i><a class="tilbake_reg" href="Reservations.html"> Gå tilbake </a></p>
-    </div>
 
         <header class="RegInfo">
             <h1 class="topptekst"> Reservation </h1>
@@ -32,34 +46,36 @@
 
 
                                 <!-- Utfyllingsskjema-->
-        <section class="RegSkjema">
-
+        <section class="RegSkjemaBord">
+           
             <fieldset>
 
-                <label id="navn" for="fname">Name* </label> <br> <br>
-                <input type="text" id="fornavn" name="fornavn" placeholder="First name"> 
+                <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                    <label id="navn" for="fname">Name* </label> <br> <br>
+                        <input type="text" style="font-family: Montserrat, Times, serif;" id="fname" name="fornavn" placeholder="First name"> 
                 
-                <label for="fname"></label> <input type="text" id="etternavn" name="etternavn" placeholder="Last name"> <br> <br>
+                    <label for="fname"></label> <input type="text" id="etternavn" name="etternavn" placeholder="Last name"> <br> <br>
+
+                    <label for="email">E-mail* </label> <br> <br>
+                        <input type="email" id="email" name="email" placeholder="E-mail"> <br> <br>
 
 
-                <label for="fname">Phone Number* </label> <br> <br>
-                    <input type="text" id="tlf" name="tlf" placeholder="Phone Number"> <br> <br>
+                    <label for="tlf">Phone Number* </label> <br> <br>
+                        <input type="text" id="tlf" name="tlf" placeholder="Phone Number"> <br> <br>
 
 
-                <label for="fname">E-mail* </label> <br> <br>
-                    <input type="email" id="email" name="email" placeholder="E-mail"> <br> <br>
+                    <label for="fname"> Dato* </label> <br> <br>
+                        <input type="date" id="dato" name="dato"> <input type="time" id="tid" name="Time"><br> <br>
 
-                <label for="fname"> Dato* </label> <br> <br>
-                    <input type="date" id="dato" name="dato"> <br> <br>
+                    <label for="guests">Number of guests* </label> <br> <br>
+                        <input type="text" id="gjester" name="gjester" placeholder="6-20"> <br> <br>
 
-                <label for="guests">Number of guests* </label> <br> <br>
-                    <input type="text" id="gjester" name="gjester" placeholder="7-50"> <br> <br>
-
-                <label for="kommentar">Comments* </label> <br> <br>
-                    <textarea rows="4" cols="40" id="kommentar" placeholder="Any additional comments.."></textarea> <br> <br>
+                    <label for="kommentar">Comments* </label> <br> <br>
+                        <textarea rows="4" cols="40" id="kommentar" placeholder="Any additional comments.."></textarea> <br> <br>
                 
 
-                <input id="submit" type="submit" value="Submit reservation">
+                    <input type="submit" value="Submit">
+                </form>
 
             </fieldset>
 
