@@ -666,31 +666,16 @@ a:hover {
 .Reservation {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: auto;
   font-family: Montserrat, Times, serif;
 
 }
 
 /*-------------------------------------------------Venstre side-----------------------------------------------------------------------*/
 
-.ikon_reg {
-  color: indigo;
-  background-color: white;
-  font-weight: 700;
-  position: fixed;
-  margin-top: 10px;
-  margin-left: 10px;
-  border-radius: 5px;
-}
-
-.tilbake_reg {
-  color: indigo;
-}
-
 .RegInfo {
-
-  position: relative;
-  color: indigo;
+  display: relative;
+  color: white;
   margin-top: 80px;
   margin-left: 80px;
   width: 550px;
@@ -698,7 +683,7 @@ a:hover {
 }
 
 .RegInfo h1 {
-  background-color: rgb(211, 211, 211, 0.9);
+  height: fit-content;
   margin-left: 20px;
   font-size: 50px;
   width: 300px;
@@ -706,11 +691,11 @@ a:hover {
 }
 
 .RegInfo p {
+  height: fit-content;
   font-weight: 700;
-  background-color: rgb(211, 211, 211, 0.9);
-  color: indigo;
+  color: white;
   width: 250px;
-  margin-top: 0;
+  margin-top: 25px;
   margin-left: 20px;
   text-align: left;
   border: 1px solid transparent;
@@ -721,53 +706,70 @@ a:hover {
 
 
 /*--------------------------------------------------Utfyllingsskjema--------------------------------------------------------------------------*/
-
-.RegSkjema {
+.RegSkjemaBord {
+  border-color: transparent;
   font-weight: 700;
-  position: relative;
+  display: relative;
   flex-shrink: 1px;
-  left: 20%;
-  top: 90px;
+  margin-top: 80px;
+  margin-left: 300px;
   width: 500px;
   height: 550px;
   padding-top: 5px;
   padding-left: 5px;
-  color: indigo;
+  color: white;
+ 
 }
 
-  .RegSkjema fieldset {
-  
-  background-color: rgb(211, 211, 211, 0.9);
-  border-color: transparent;
+  .RegSkjemaBord fieldset {
   border-radius: 5px;
+  font-family: Montserrat, Times, serif;
+  
   }
 
-  .RegSkjema label {
+  .RegSkjemaBord label {
   margin-left: 10px;
+  font-family: Montserrat, Times, serif;
+  font-weight: 700;
   }
 
-  .RegSkjema input {
+  .RegSkjemaBord input {
   padding: 3px;
   margin-left: 5px;
   border-radius: 7px;
+  font-family: Montserrat, Times, serif;
+  font-weight: 700;
   }
 
   #navn {
     margin-top: 10px;
+  }
+  
+  #email{
+    width: 69%;
+  }
+
+  #tlf{
+    width: 44%;
   }
 
   #gjester {
   width: 40px;
   }
 
-  .RegSkjema textarea {
+  .RegSkjemaBord textarea {
   padding: 4px;
   margin-left: 5px;
   border-radius: 7px;
+  font-family: Montserrat, Times, serif;
+  font-weight: 700;
+  width: 69%;
   }
 
   #submit {
     margin-bottom: 8px;
+    font-family: Montserrat, Times, serif;
+    font-weight: 700;
   }
 
 /*------------------------------------------------- Mobil S -----------------------------------------------------------------------*/
