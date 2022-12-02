@@ -61,11 +61,19 @@ body{
     flex-basis: 25%;
     margin: 1%;
     text-align: center;
+    transition: 1s;
 }
 
 .MenyOverskriftTo{
     padding-top: 1.5%;
     padding-bottom: 0.5%;
+    transition: 1s;
+}
+
+.MenyContainerBoks:hover{
+  transform: scale(1.1);
+  background: #FF6B6B;
+
 }
 
 

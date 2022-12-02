@@ -1,0 +1,143 @@
+body{
+    background-color: #222;
+    color:white;
+}
+
+
+.DATAOverskrift{
+    display: flex;
+    justify-content: center;
+    bottom: 40px;
+    font-weight: 100;
+    font-size: 100%;
+}
+
+.DATAContainer1 div, .DATAContainer3 div{
+    border: 1px #ccc solid; 
+    padding: 2%;
+    margin: 2%;
+}
+
+.DATAContainer2 div{
+    border: 1px #ccc solid; 
+    padding: 1%;
+    flex-basis: 60%;
+}
+
+ #winterBy {
+    display: none;
+}
+
+.DATAContainer1, .DATAContainer2, .DATAContainer3{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+   
+}
+
+.DATABoks1{
+    flex-basis: 23.5%;
+    width: fit-content;
+}
+
+.DATABoks4{
+    flex-basis: 20%;
+}
+
+ .DATABoks2{
+    flex-basis: 60%;
+    transition: 1s;
+
+} 
+
+.DATABoks3{
+    flex-basis: 60%;
+    transition: 1s;
+
+} 
+
+
+
+.DATAContainer2{
+    position: relative;
+    height: 67vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.DATAContainer4{
+    display: flex;
+    justify-content: center;
+}
+
+
+.DATAContainer4 div{
+    display: flex;
+    border:1px solid #ccc;
+    justify-content: center;
+    flex-basis: 40%;
+    height: 50vh;
+    margin-right: 5px;
+    height: auto;
+}
+
+
+
+@media (max-width:320px) { /* ---------------- */
+    
+}
+@media (max-width:426px) { /* ---------------- */
+    
+
+    .DATAContainer4 {
+        flex-direction: column;
+    }
+
+}
+@media (max-width: 550px) { /* ---------------- */
+
+
+    #winterBy {
+      display: block;
+    }
+}
+
+@media (max-width: 720px) { /* ---------------- */
+
+
+    #winterBy {
+        display:flex;
+    }
+
+    #utsideBilde{
+     display: none;   
+    }
+}
+
+@media (max-width: 768px) { /* ---------------- */
+
+
+    .DATAContainer1 {
+        flex-direction: column;
+    }
+    .DATABoks2{
+        flex-basis: 50%;
+    }
+    .DATABoks3{
+        flex-basis: 60%;
+
+    }
+}
+
+
+
+@media (max-width: 1024px) { /* ---------------- */
+    
+}
+
+@media (min-width: 1025px) { /* ---------------- */
+
+
+
+  
+}

@@ -200,100 +200,141 @@ a:hover {
 
 /*-------------------------------INDEX START--------------------------------------*/
 
-.INDEX-bg-img {
-  background-image: url("Bilder/pexels-chan-walrus-941861.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+.INDEX-hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/pexels-eneida-nieves-905847.jpg');
   background-size: cover;
-  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /*Dette er teksten til bildet*/
-.INDEX-bg-img-tekst #INDEX-bg-overskrift {
+.INDEX-hero h1 {
   text-align: center;
   color: white;
-  padding-top: 50px;
-  padding-bottom: 10px;
-  font-size: 400%;
-  font-weight: 150%;
+  margin-bottom: 0.5em;
+  font-size: 4em;
 }
 
-.INDEX-bg-img-tekst #INDEX-bg-tekst {
-  text-align: center;
-  padding: 10px;
+.INDEX-hero p {
   color: white;
-  font-size: 150%;
-  font-weight: 100;
+  font-size: 250%;
+}
+
+  .INDEX-about-flexcontainer {
+      background-color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: left;
+      width: 100%;
+      padding-top: 100px;
+      padding-bottom: 80px;
+  }
+
+  .INDEX-about-flexcontainer > div {
+      width: 500px;
+      font-size: 20px;
+      padding: 30px;
+  }
+
+  .INDEX-about-flexcontainer h3 {
+      color: black;
+      font-weight: bold;
+  }
+
+  .INDEX-about-flexcontainer p {
+      color: black;
+      padding-top: 10px;
+  }
+
+
+  .INDEX-about-div2 img {
+    height: 300px;
+}
+  
+.INDEX-about-div1 button {
+    background-color: transparent;
+    font-size: large;
+    color: black;
+    border-color: black;
+    border-width: 1px;
+    margin-top: 20px;
+    transition: all .5s ease;
+    text-align: left;
+    padding: 10px 30px;
+  }
+
+.INDEX-about-div1 button:hover {
+    cursor: pointer;
+    background-color: black;
+    color:white;
+  }
+  
+  .INDEX-booking-flexcontainer {
+    background-color:#222;
+    display: flex;
+    flex-wrap:wrap-reverse;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.INDEX-booking-flexcontainer > div {
+    width: 500px;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.INDEX-booking-flexcontainer h3 {
+    color: white;
+    font-weight: bold;
+}
+
+.INDEX-booking-flexcontainer p {
+    color: white;
+    padding-top: 10px;
 
 }
 
-.INDEX-bg-img-tekst #INDEX-bg-undertekst {
-  text-align: center;
-  padding: 1px;
-  color: white;
-  font-size: 150%;
-  font-weight: 100;
-
+.INDEX-booking-div1 img {
+    height: 300px;
 }
 
-/*Reservasjonsknapp*/
+  
+.INDEX-booking-div2 button {
+    background-color: transparent;
+    font-size: large;
+    color: white;
+    border-color: white;
+    border-width: 1px;
+    margin-top: 20px;
+    transition: all .5s ease;
+    text-align: center;
+    padding: 10px 30px;
+  }
 
-.INDEX-bg-img-knapper {
-  text-align: center;
-  padding: 30px;
-  transition: all .5s ease;
-}
-
-.INDEX-bg-img-knapper #INDEX-bg-knapp {
-  font-family: Montserrat, Times, serif;
-  background-color: transparent;
-  font-size: large;
-  color: rgb(255, 255, 255);
-  border-color: white;
-  border-width: 1px;
-  padding: 1em 2em;
-  transition: all .5s ease;
-}
-
-
-#INDEX-bg-knapp:hover {
-  cursor: pointer;
-  background-color: white;
-  color: black;
-}
-
-.INDEX-bg-img-knapper {
-  text-align: center;
-  padding: 30px;
-  transition: all .5s ease;
-}
-
-.INDEX-bg-img-knapper #INDEX-bg-knapp2 {
-
-  font-family: Montserrat, Times, serif;
-
-  background-color: transparent;
-  font-size: large;
-  color: white;
-  border-color: white;
-  border-width: 1px;
-  padding: 1em 2em;
-  transition: all .5s ease;
-}
-
-
-#INDEX-bg-knapp2:hover {
-  cursor: pointer;
-  background-color: white;
-  color: black;
-}
+.INDEX-booking-div2 button:hover {
+    cursor: pointer;
+    background-color: white;
+    color:black;
+  }
 
 /*-------------------------------INDEX SLUTT--------------------------------------*/
 
 /*-------------------------------INDEX FOOTER START--------------------------------------*/
 
 
-/*--INDEX FOOTER-- */
+/*--INDEX FOOTER-- */ 
 .INDEX-footer {
   background-color: white;
   color: black;
@@ -304,6 +345,7 @@ a:hover {
 }
 
 .INDEX-container {
+  font-weight: 700;
   display: flex;
   padding: 50px 20px;
   min-width: 100px;
@@ -311,13 +353,14 @@ a:hover {
 }
 
 .INDEX-random {
-  background-color: white;
+  background-color:white;
   flex-grow: 1;
   flex-basis: 100%;
 }
 
 .INDEX-åpningstider {
   background-color: white;
+
   flex-grow: 1;
   flex-basis: 100%;
   margin: 0 100;
@@ -350,6 +393,7 @@ a:hover {
 }
 
 .INDEX-copyright {
+  font-weight: 500;
   text-align: center;
   padding: 15px 0px;
   border-top: 1px solid grey;
@@ -469,9 +513,11 @@ a:hover {
 
 .MenyContainer div,
 .MenyOverskriftTo {
-  border: 1px #ccc solid;
-  padding: 10px
+  border-left: 1px #ccc solid;
+  border-right: 1px #ccc solid;
+  padding: 30px
 }
+
 
 
 /*Setter boksene ved siden av hverandre*/
@@ -483,9 +529,11 @@ a:hover {
 
 
 .MenyContainerBoks {
+  font-weight: 700;
   flex-basis: 25%;
   margin: 1%;
   text-align: center;
+  /*transition: 1s;*/
 }
 
 .MenyOverskriftTo {
@@ -493,12 +541,30 @@ a:hover {
   padding-bottom: 0.5%;
 }
 
+.MenyContainerBoks #allergi{
+  bottom: 0;
+  border: 1px solid transparent;
+  width: fit-content;
+}
+
+.MenyOverskriftTo h2{
+  border-bottom: 1px solid gainsboro;
+}
+/*
+.MenyContainerBoks:hover{
+  transform: scale(1.1);
+  font-weight: 800;
+  font-size: 120%;
+}
+*/
+
 /* MENY  - SILJE - SLUTT ----------------------------------------------------------------------------------------------/*
 
 
 /* RESERVASJONER - EMIL - START -----------------------------------------------------------------------------------------*/
 
 .Reservationsreservasjoner {
+  font-weight: 700;
   background-image: url(BG.jpg);
   min-height: 800px;
   background-position: center;
@@ -553,6 +619,7 @@ a:hover {
 /*Knapp reserver bord*/
 
 .ReservationsHeader button {
+  font-weight: 700;
   font-family: Montserrat, Times, serif;
   background-color: transparent;
   font-size: large;
@@ -568,14 +635,9 @@ a:hover {
 }
 
 
-
-
-
-
-
-
 /*Tekst som ligger i footer*/
 .Reservationsparagrafer {
+  font-weight: 700;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -597,8 +659,6 @@ a:hover {
   color: rgb(0, 0, 0);
   margin-left: 50px;
   margin-right: 50px;
-
-
 }
 
 
@@ -608,6 +668,7 @@ a:hover {
 .Reservationsparagraf2 p,
 .Reservationsparagraf3 p {
   margin-top: 15px;
+  font-weight: 700;
 }
 
 .Reservationsparagraf1 {
@@ -649,152 +710,187 @@ a:hover {
 }
 
 
-
-
-
-
 /* RESERVASJONER - EMIL - SLUTT -----------------------------------------------------------------------------------------*/
 
 
 /* REGISTRERING - BREDE - START -----------------------------------------------------------------------------------------*/
 
-/* ------------------------------------------- Registrering -------------------------------------------------------*/
-
-/*---------------------------------------------------Seksjon------------------------------------------------------------------*/
-
-
-.Reservation {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  font-family: Montserrat, Times, serif;
-
-}
-
-/*-------------------------------------------------Venstre side-----------------------------------------------------------------------*/
-
-.RegInfo {
-  display: relative;
-  color: white;
-  margin-top: 80px;
-  margin-left: 80px;
-  width: 550px;
-  height: 550px;
-}
-
-.RegInfo h1 {
-  height: fit-content;
-  margin-left: 20px;
-  font-size: 50px;
-  width: 300px;
-  border-radius: 5px 5px 5px 0px;
-}
-
-.RegInfo p {
-  height: fit-content;
-  font-weight: 700;
-  color: white;
-  width: 250px;
-  margin-top: 25px;
-  margin-left: 20px;
-  text-align: left;
-  border: 1px solid transparent;
-  border-radius: 0px 0px 5px 5px ;
-}
-
-
-
-
-/*--------------------------------------------------Utfyllingsskjema--------------------------------------------------------------------------*/
-.RegSkjemaBord {
-  border-color: transparent;
-  font-weight: 700;
-  display: relative;
-  flex-shrink: 1px;
-  margin-top: 80px;
-  margin-left: 300px;
-  width: 500px;
-  height: 550px;
-  padding-top: 5px;
-  padding-left: 5px;
-  color: white;
- 
-}
-
-  .RegSkjemaBord fieldset {
-  border-radius: 5px;
-  font-family: Montserrat, Times, serif;
+ /* ------------------------------------------- Registrering -------------------------------------------------------*/
   
-  }
-
-  .RegSkjemaBord label {
-  margin-left: 10px;
-  font-family: Montserrat, Times, serif;
-  font-weight: 700;
-  }
-
-  .RegSkjemaBord input {
-  padding: 3px;
-  margin-left: 5px;
-  border-radius: 7px;
-  font-family: Montserrat, Times, serif;
-  font-weight: 700;
-  }
-
-  #navn {
-    margin-top: 10px;
-  }
+  /*---------------------------------------------------Seksjon------------------------------------------------------------------*/
   
-  #email{
-    width: 69%;
-  }
-
-  #tlf{
-    width: 44%;
-  }
-
-  #gjester {
-  width: 40px;
-  }
-
-  .RegSkjemaBord textarea {
-  padding: 4px;
-  margin-left: 5px;
-  border-radius: 7px;
-  font-family: Montserrat, Times, serif;
-  font-weight: 700;
-  width: 69%;
-  }
-
-  #submit {
-    margin-bottom: 8px;
+  
+  .Reservation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
     font-family: Montserrat, Times, serif;
-    font-weight: 700;
+  
+  
   }
+  
+  /*-------------------------------------------------Venstre side-----------------------------------------------------------------------*/
 
-/*------------------------------------------------- Mobil S -----------------------------------------------------------------------*/
-@media all and (max-width: 320px) {
+  #RegValg {
+    font-weight: 700;
+    position: absolute;
+    display: flex;
+    border-bottom: 1px solid white;
+    margin-left: 22px;
+   }
+    #klump{
+      content: '';
+      height: 6px;
+      width: 60px;
+      background: #abe9ee;
+      border-radius: 60px 60px 0 0;
+      position: absolute;
+      bottom: 0;
+      left: 35px;
+    }
+
+    .ReserverBord, .BookEvent{
+      padding: 5px 12px;
+      background: linear-gradient(45deg,#90aaae,rgb(127, 149, 117));
+      cursor: pointer;
+      transition: 0.3s ease;
+      margin-bottom: 10px;
+    }
+
+    .ReserverBord{
+      margin-right: 5px;
+    }
+
+    .tilbakeKnapp{ 
+      color: white;
+      position: absolute;
+      font-weight: 700;
+      font-size:x-large;
+      margin-top: 10px;
+      margin-left: 20px;
+      
+    }
+
+
 
   .RegInfo {
-    margin-left: 0;
-    left: 5%;
+    display: relative;
+    color: white;
+    margin-top: 100px;
+    margin-left: 80px;
+    width: 550px;
+    height: 550px;
+  }
+  
+  .RegInfo h1 {
     height: fit-content;
-
+    margin-left: 20px;
+    font-size: 50px;
+    width: 300px;
+    border-radius: 5px 5px 5px 0px;
   }
-
+  
   .RegInfo p {
-    padding: 5px 5px 5px 5px;
+    height: fit-content;
+    font-weight: 700;
+    color: white;
+    width: 250px;
+    margin-top: 25px;
+    margin-left: 20px;
+    text-align: left;
+    border: 1px solid transparent;
+    border-radius: 0px 0px 5px 5px ;
+  }
+  
+  
+  
+  
+  /*--------------------------------------------------Utfyllingsskjema--------------------------------------------------------------------------*/
+  .RegSkjemaBord {
+    font-weight: 700;
+    display: flex;
+    flex-shrink: 1px;
+    margin-top: 80px;
+    margin-left: 200px;
+    width: 500px;
+    height: 550px;
+    padding-top: 5px;
+    padding-left: 5px;
+    color: white;
+    border: 1px solid transparent;
+    
   }
 
+    .RegSkjemaBord #RegSkjemBord {
+      width: 100%;
+      position: relative;
 
-  .RegSkjema {
-    width: fit-content;
-    top: 30px;
-    left: 0.5px;
-    margin-bottom: 2px;
-  }
-}
+    }
 
+    .RegSkjemaBord #form{
+      width: 200%;
+      position: relative;
+      display: flex;
+      margin: auto;
+      transition: 0.2s ease-in-out;
+    }
+
+    #RegSkjemBord {
+      width: 100%;
+      margin: auto;
+    }
+
+    #RegSkjemEvent {
+      width: 100%;
+      margin: auto;
+      display: none;
+    }
+
+    .RegSkjemaBord label {
+    margin-left: 10px;
+    font-family: Montserrat, Times, serif;
+    font-weight: 700;
+    }
+  
+    .RegSkjemaBord input {
+    padding: 3px;
+    margin-left: 5px;
+    border-radius: 7px;
+    font-family: Montserrat, Times, serif;
+    font-weight: 700;
+    }
+  
+    #navn {
+      margin-top: 10px;
+    }
+    
+    #email{
+      width: 69%;
+    }
+  
+    #tlf{
+      width: 44%;
+    }
+  
+    #gjester {
+    width: 40px;
+    }
+  
+    .RegSkjemaBord textarea {
+    padding: 4px;
+    margin-left: 5px;
+    border-radius: 7px;
+    font-family: Montserrat, Times, serif;
+    font-weight: 700;
+    width: 69%;
+    }
+  
+    #submit {
+      margin-bottom: 8px;
+      font-family: Montserrat, Times, serif;
+      font-weight: 700;
+    }
+/*------------------------------------------------- Mobil S -----------------------------------------------------------------------*/
 /*------------------------------------------------- Mobil M -----------------------------------------------------------------------*/
 
 @media all and (max-width: 375px) {
@@ -925,7 +1021,6 @@ a:hover {
     margin-right: auto;
 
   }
-
   /*---MENY SLUTT-------------------*/
   /*---RESERVASJONER START----------*/
   .ReservationsHeader h1 {
@@ -984,6 +1079,26 @@ a:hover {
 
 
   /*---RESERVASJONER SLUTT-- --------*/
+  /*---REGSKJEMA START-- --------*/
+  .RegInfo {
+    margin-left: 0;
+    left: 5%;
+    height: fit-content;
+
+  }
+
+  .RegInfo p {
+    padding: 2px 2px 2px 2px;
+  }
+
+
+  .RegSkjema {
+    width: fit-content;
+    top: 30px;
+    left: 0.5px;
+    margin-bottom: 2px;
+  }
+  /*---REGSKJEMA SLUTT-- --------*/
   /*---ABOUT START-------------------*/
   /*---ABOUT SLUTT-------------------*/
 
@@ -1178,6 +1293,7 @@ a:hover {
   /*---RESERVASJONER SLUTT-- --------*/
   /*---ABOUT START-------------------*/
   /*---ABOUT SLUTT-------------------*/
+
 }
 
 @media (max-width: 992px) {
