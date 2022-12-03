@@ -46,7 +46,9 @@ a:hover {
 
 .logo a,
 .toggle a {
-  font-size: 20px;
+  font-size:20px;
+
+
 }
 
 .button.secondary {
@@ -200,7 +202,7 @@ a:hover {
 /*-------------------------------INDEX START--------------------------------------*/
 
 .INDEX-hero {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -320,6 +322,7 @@ a:hover {
     transition: all .5s ease;
     text-align: center;
     padding: 10px 30px;
+    font-family: unset;
   }
 
 .INDEX-booking-div2 button:hover {
@@ -476,7 +479,7 @@ a:hover {
 
 /* Menyen: bildet -------------------------------------------------------------------------------------------------------*/
 .Meny-hero {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -832,7 +835,7 @@ a:hover {
     }
 }
 
-/* RESERVASJONER - EMIL - SLUTT -----------------------------------------------------------------------------------------*/
+/* RESERVASJONER - SLUTT -----------------------------------------------------------------------------------------*/
 
 
 /* RESERVASJON SKJEMA - START -----------------------------------------------------------------------------------------*/
@@ -1012,7 +1015,11 @@ a:hover {
       font-weight: 700;
       }
 
+
 /* RESERVASJON SKJEMA - END ----------------------------------------------------------------------------------------------*/
+
+/*MEDIA QUERY - START ---------------------------------------------------------------------------------------------------------*/
+
 
 @media (max-width:320px) {
   
@@ -1028,17 +1035,32 @@ a:hover {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-
   }
-  /*---MENY SLUTT-------------------*/
+
+ .Meny-hero p{
+  font-size: 20px;
+ }
+
+ .Meny-hero h1{
+  font-size: 40px;
+ }
+
+ .Meny-hero {
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/kokk.jpg');
+}
+
+/*---MENY SLUTT-------------------*/
 
   /*---RESERVASJONER START----------*/
+  .Reservationsreservasjoner{
+    width: 100%;
+  }
   .ReservationsHeader h1 {
     font-size: 60px;
     color: rgb(255, 255, 255);
     margin-bottom: 0;
-    font-family: 'Libre Baskerville', serif;
-
+    font-family: Montserrat, Times, serif;
   }
 
   /*Paragraf under Overskrift*/
@@ -1055,21 +1077,10 @@ a:hover {
     width: 200px;
 
   }
-
-  .Reservationsfooter h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    letter-spacing: 0em;
-    text-transform: none;
-    line-height: 1.4em;
-    font-size: 30px;
-    margin-top: 20px;
-  }
-
-
   /*---RESERVASJONER SLUTT-- --------*/
+
   /*---REGSKJEMA START-- --------*/
+
   .Reservation{
     flex-direction: column;
   }
@@ -1094,36 +1105,6 @@ a:hover {
     margin-left: 5px;
   }
 }
-/* REGISTRERING - BREDE - START -----------------------------------------------------------------------------------------------*/
-
-
-
-/*MEDIA QUERY - START ---------------------------------------------------------------------------------------------------------*/
-
- @media (max-width:320px) { /*-------------------------------------------------------------------------------------------------*/ 
-
-  /*--NAV BAR-------------------*/
-  /*--NAV BAR SLUTT-------------*/
-  /*--INDEX START---------------*/
-  /*--INDEX SLUTT---------------*/
-  /*--MENY START----------------*/
-  .MenyContainer, .MenyOverskriftTo {
-    flex-direction: column;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
- }
-
-  /*---MENY SLUTT-----------------*/
-  /*--RESERVASJONER START---------*/
-  /*--RESERVASJONER SLUTT---------*/
-  /*--BOUT START------------------*/
-  /*--ABOUT SLUTT-----------------*/
-
-}
-
-
-/*Small devices (landscape phones, 576px and up)*/
 
 @media (max-width: 576px) { /*Small devices (landscape phones, 576px and up)---------------------------------------------------*/
 
@@ -1145,21 +1126,35 @@ a:hover {
   }
 
   /*---INDEX SLUTT-----------------*/
+
   /*---MENY START------------------*/
-  .MenyContainer, .MenyOverskriftTo {
+  .MenyContainer,
+  .MenyOverskriftTo {
     flex-direction: column;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
 
+ .Meny-hero p{
+  font-size: 20px;
+ }
+
+ .Meny-hero h1{
+  font-size: 40px;
+ }
+
+ .Meny-hero {
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/kokk.jpg');
+}
   /*---MENY SLUTT-------------------*/
+
   /*---RESERVASJONER START----------*/
   .ReservationsHeader h1 {
     font-size: 0px;
     color: rgb(255, 255, 255);
     margin-bottom: 0;
-    font-family: 'Libre Baskerville', serif;
 
   }
 
@@ -1178,38 +1173,10 @@ a:hover {
 
   }
 
-
-  .Reservationsreservasjoner {
-    /*background-image: url(TelefonSize.jpg); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
-  .Reservationsparagrafer {
-
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      "paragraf1"
-      "paragraf2"
-      "paragraf3"
-
-  }
-
-  .Reservationsfooter h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    letter-spacing: 0em;
-    text-transform: none;
-    line-height: 1.4em;
-    font-size: 40px;
-    margin-top: 20px;
-  }
-
   /*---RESERVASJONER SLUTT-- --------*/
+
+  /*---REGSKJEMA START-- --------*/
+
   .Reservation{
     flex-direction: column;
   }
@@ -1233,25 +1200,8 @@ a:hover {
     padding: 0;
     margin-left: 10px;
   }
-
-  /*---ABOUT START-------------------*/
-  /*---ABOUT SLUTT-------------------*/
-
+  /*---REGSKJEMA SLUTT-- --------*/
 }
-
-
-@media (max-width: 768px) {
-  /* Medium devices (tablets, 768px and up) ----------------------------------------------------------*/
-
-  /*---NAV BAR-------------------*/
-  /*---NAV BAR SLUTT-------------*/
-  /*---INDEX START---------------*/
- }  
-  /*---MENY SLUTT--------------------*/
-  /*---RESERVASJONER START-----------*/
-  /*---RESERVASJONER SLUTT ----------*/
-  /*---ABOUT START-------------------*/
-  /*---ABOUT SLUTT-------------------*/
 
 
 @media (max-width: 768px) { /* Medium devices (tablets, 768px and up) -------------------------------------------------------- */
@@ -1277,25 +1227,36 @@ a:hover {
     margin-right: 10px;
 }
   /*---INDEX SLUTT------------------*/
+
   /*---MENY START-------------------*/
-  .MenyContainer, .MenyOverskriftTo {
+  .MenyContainer,
+  .MenyOverskriftTo {
     flex-direction: column;
     text-align: center;
-    width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .MenyenBilde {
-    height: 400px;
+ .Meny-hero p{
+  font-size: 20px;
+ }
+
+ .Meny-hero h1{
+  font-size: 40px;
+ }
+
+ .Meny-hero {
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/kokk.jpg');
 }
+
   /*---MENY SLUTT-------------------*/
+
   /*---RESERVASJONER START----------*/
   .ReservationsHeader h1 {
     font-size: 45px;
     color: rgb(255, 255, 255);
     margin-bottom: 0;
-    font-family: 'Libre Baskerville', serif;
 
   }
 
@@ -1313,37 +1274,10 @@ a:hover {
     width: 350px;
 
   }
-  .Reservationsreservasjoner {
-    /*background-image: url(TelefonSize.jpg);*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
-  .Reservationsparagrafer {
-
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      "paragraf1"
-      "paragraf2"
-      "paragraf3"
-
-  }
-
-  .Reservationsfooter h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    letter-spacing: 0em;
-    text-transform: none;
-    line-height: 1.4em;
-    font-size: 65px;
-
-  }
-
   /*---RESERVASJONER SLUTT-- --------*/
+
+  /*---REGSKJEMA START-- --------*/
+
   .Reservation{
     flex-direction: column;
     
@@ -1369,23 +1303,19 @@ a:hover {
     margin-left: 10px;
   }
 
-  /*---ABOUT START-------------------*/
-  /*---ABOUT SLUTT-------------------*/
+  /*---REGSKJEMA SLUTT-- --------*/
 }
 
 @media (max-width: 992px) { /* Large devices (desktops, 992px and up) --------------------------------------------------------*/
 
   /*---NAV BAR----------------------*/
   /*---NAV BAR SLUTT----------------*/
+
   /*---INDEX START------------------*/
-  .INDEX-bg-img {
-    min-height: 400px;
-}
-.INDEX-bg-img-tekst #bg-overskrift {
-    padding-top: 80px;
-}
   /*---INDEX SLUTT-------------------*/
+
   /*---MENY START--------------------*/
+
   .MenyContainer, .MenyOverskriftTo {
     flex-direction: column;
     text-align: center;
@@ -1393,16 +1323,10 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
   }
-
-  .MenyenBilde {
-    height: 400px;
-}
   /*---MENY SLUTT--------------------*/
+
   /*---RESERVASJONER START-----------*/
   /*---RESERVASJONER SLUTT-----------*/
-  /*---ABOUT START-------------------*/
-  /*---ABOUT SLUTT-------------------*/
-
 }
 
 
@@ -1411,31 +1335,21 @@ a:hover {
   /*---NAV BAR----------------------*/
   /*---NAV BAR SLUTT----------------*/
   /*---INDEX START------------------*/
-  .INDEX-bg-img {
-    min-height: 600px;
-}
-.INDEX-bg-img-tekst #INDEX-bg-overskrift {
-    padding-top: 80px;
-}
   /*---INDEX SLUTT-------------------*/
+
   /*---MENY START--------------------*/
+
   .MenyenBilde {
     height: 400px;
   }
 
   /*---MENY SLUTT-------------------*/
-  /*---RESERVASJONER START----------*/
-  .Reservationsfooter h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    letter-spacing: 0em;
-    text-transform: none;
-    line-height: 1.4em;
-    font-size: 25px;
-  }
 
+  /*---RESERVASJONER START----------*/
   /*---RESERVASJONER SLUTT-- --------*/
+
+  /*---REGSKJEMA START-- --------*/
+
   .Reservation{
     flex-direction: column;
   }
@@ -1459,11 +1373,8 @@ a:hover {
     padding: 0;
     margin-left: 10px;
   }
-
-  /*---ABOUT START-------------------*/
-  /*---ABOUT SLUTT-------------------*/
-
 }
+/*---REGSKJEMA SLUTT-- --------*/
 
 
 @media (max-width: 1400px) { /* XX-Large devices (larger desktops, 1400px and up) --------------------------------------------*/ 
@@ -1475,28 +1386,10 @@ a:hover {
   .MenyenBilde {
     height: 400px;
   }
-
   /*---MENY SLUTT-------------------*/
   /*---RESERVASJONER START----------*/
-  .Reservationsfooter h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    letter-spacing: 0em;
-    text-transform: none;
-    line-height: 1.4em;
-    font-size: 25px;
-  }
-
   /*---RESERVASJONER SLUTT-- --------*/
-  /*---ABOUT START-------------------*/
-  /*---ABOUT SLUTT-------------------*/
-
 
 }
-   /*---MENY SLUTT--------------------*/
-  /*---RESERVASJONER START-----------*/
-  /*---RESERVASJONER SLUTT-----------*/
-  /*---ABOUT START-------------------*/
-  /*---ABOUT SLUTT-------------------*/
+
 /*MEDIA QUERY - SLUTT ---------------------------------------------------------------------------------------------------------*/
