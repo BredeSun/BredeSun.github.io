@@ -245,9 +245,9 @@ a:hover {
       padding: 30px;
   }
 
-  .INDEX-about-flexcontainer h3 {
+  .INDEX-about-flexcontainer h2 {
       color: black;
-      font-weight: bold;
+      font-size: 1.5em;
   }
 
   .INDEX-about-flexcontainer p {
@@ -298,7 +298,7 @@ a:hover {
 
 .INDEX-booking-flexcontainer h3 {
     color: white;
-    font-weight: bold;
+    font-size: 1.5em;
 }
 
 .INDEX-booking-flexcontainer p {
@@ -373,7 +373,7 @@ a:hover {
   flex-grow: 1;
   flex-basis: 100%;
 }
-.INDEX-footer-container h3 {
+.INDEX-footer-container h4 {
   margin-bottom: 20px;
   font-size: 25px;
 }
@@ -403,72 +403,6 @@ a:hover {
 .INDEX-footer-container {
   display: flex;
   justify-content: center;
-}
-
-@media only screen and (max-width: 786px) {
-  .INDEX-container {
-    flex-direction: column;
-
-  }
-
-  .INDEX-åpningstider {
-    margin: 0;
-  }
-
-  .INDEX-footer-container>ul {
-    width: 400px;
-    padding: 20px;
-  }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .INDEX-container {
-    flex-direction: column;
-
-  }
-
-  .INDEX-åpningstider {
-    margin: 0;
-  }
-
-  .INDEX-footer-container>ul {
-    width: 400px;
-    padding: 20px;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .INDEX-bg-img {
-    min-height: 500px;
-  }
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .INDEX-bg-img {
-    min-height: 400px;
-  }
-
-  .INDEX-bg-img-tekst #bg-overskrift {
-    padding-top: 80px;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .INDEX-bg-img {
-    min-height: 600px;
-  }
-
-  .INDEX-bg-img-tekst #INDEX-bg-overskrift {
-    padding-top: 80px;
-  }
 }
 
 /*-------------------------------INDEX FOOTER SLUTT--------------------------------------*/
@@ -573,7 +507,6 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
 }
 
 /*Overskrift reservations*/
@@ -848,8 +781,7 @@ a:hover {
     flex-wrap: wrap;
     margin: auto;
     font-family: Montserrat, Times, serif;
-  
-  
+    margin-bottom: 80px;
   }
   
   /*------------------------------------------------- Info  side-----------------------------------------------------------------------*/
@@ -860,6 +792,7 @@ a:hover {
     display: flex;
     border-bottom: 1px solid white;
     margin-left: 22px;
+
    }
     #klump{
       content: '';
@@ -1026,9 +959,24 @@ a:hover {
   /*---NAV BAR-------------------*/
   /*---NAV BAR SLUTT-------------*/
   /*---INDEX START---------------*/
+  .INDEX-hero {
+    height: 50vh;
+  }
+
+
+  .INDEX-hero h1 {
+    font-size: 1em;
+  }
+  
+  .INDEX-hero p {
+    font-size: 70%;
+  }
+
+
   /*---INDEX SLUTT---------------*/
 
   /*---MENY START----------------*/
+
   .MenyContainer,
   .MenyOverskriftTo {
     flex-direction: column;
@@ -1045,10 +993,12 @@ a:hover {
   font-size: 40px;
  }
 
- .Meny-hero {
-  height: 50vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/kokk.jpg');
+ .Meny-hero  {
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/pasta.jpg');
 }
+
+
 
 /*---MENY SLUTT-------------------*/
 
@@ -1111,9 +1061,13 @@ a:hover {
   /*---NAV BAR-------------------*/
   /*---NAV BAR SLUTT-------------*/
   /*----INDEX START---------------*/
+  .INDEX-hero {
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/pexels-eneida-nieves-905847.jpg');
+  }
+
   .INDEX-container {
     flex-direction: column;
-
   }
 
   .INDEX-åpningstider {
@@ -1123,8 +1077,7 @@ a:hover {
   .INDEX-footer-container>ul {
     width: 400px;
     padding: 20px;
-  }
-
+  }  
   /*---INDEX SLUTT-----------------*/
 
   /*---MENY START------------------*/
@@ -1219,13 +1172,22 @@ a:hover {
   }
 
   .INDEX-footer-container>ul {
-    width: 400px;
+    width: 320px;
     padding: 20px;
   }
 
   .INDEX-booking-div1, .INDEX-about-div2{
     margin-right: 10px;
 }
+
+.INDEX-hero h1 {
+  font-size: 3em;
+}
+
+.INDEX-hero p {
+  font-size: 200%;
+}
+
   /*---INDEX SLUTT------------------*/
 
   /*---MENY START-------------------*/
@@ -1316,13 +1278,26 @@ a:hover {
 
   /*---MENY START--------------------*/
 
-  .MenyContainer, .MenyOverskriftTo {
+  .MenyContainer,
+  .MenyOverskriftTo {
     flex-direction: column;
     text-align: center;
-    width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
+
+ .Meny-hero p{
+  font-size: 20px;
+ }
+
+ .Meny-hero h1{
+  font-size: 40px;
+ }
+
+ .Meny-hero {
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/kokk.jpg');
+}
   /*---MENY SLUTT--------------------*/
 
   /*---RESERVASJONER START-----------*/

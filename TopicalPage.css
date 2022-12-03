@@ -1,19 +1,12 @@
-*{
-    font-family: 'Lato', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    box-sizing: border-box;
-    padding: 0;
-
-
-
-
-
+* {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
 }
-/* NAVNBAR - START -----------------------------------------------------------------------------------------------*/
+
+/* NAVNBAR - START  tatt fra : -----------------------------------------------------------------------------------------------*/
 /* Basic styling */
-
-
-
 body {
   font-family: Montserrat, Times, serif;
 }
@@ -201,198 +194,231 @@ a:hover {
 
 /* NAVNBAR - SLUTT -----------------------------------------------------------------------------------------------*/
 
-
+/* Bakgrunnsfarge animation -----------------------------------------------------------------------------------------------*/
 @keyframes color {
-  0%   { background: #ff493c; }
-  20%  { background: #ffc130; }
-  40%  { background: #36e8ff; }
-  60%  { background: #82ff62; }
-  80%  { background: #ffbebe; }
-  100% { background: #ff54f6; }
+  0% {
+    background: #ff493c;
+  }
+
+  20% {
+    background: #ffc130;
+  }
+
+  40% {
+    background: #36e8ff;
+  }
+
+  60% {
+    background: #82ff62;
+  }
+
+  80% {
+    background: #ffbebe;
+  }
+
+  100% {
+    background: #ff54f6;
+  }
 }
 
 
 
-body{
-    margin: 0;
-    padding: 0;
-    height: calc(100vh - 8em);
-    animation: color 30s infinite linear;
-    background-color: #29668f;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+body {
+  margin: 0;
+  padding: 0;
+  height: calc(100vh - 8em);
+  animation: color 30s infinite linear;
+  background-color: #29668f;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 
-
+/* Flex-Container*/
 
 .flex-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: normal;
-    align-items: normal;
-    align-content: normal;
-    margin-top: 35%;
-    background-color: rgb(255, 255, 255);
-    width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  margin-top: 35%;
+  background-color: rgb(255, 255, 255);
+  width: auto;
+}
 
-  }
+.flex-container h3 {
+  font-size: 200%;
+}
 
-  .flex-container h3{
-    font-size: 200%;
-  }
-
-  .flex-container p {
-font-size: 120%;
-
-  }
-  
-  .flex-items:nth-child(1) {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-    line-height: 200%;
-    padding: 2%;
-    margin: 1% 5% 0% 5%;
-
-  }
-  
-  .flex-items:nth-child(2) {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-    line-height: 200%;
-    padding: 2%;
-    margin: 1% 5% 5% 5%;
-
-
-
-  }
-  
-  .flex-items:nth-child(3) {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-
-
-  }
-  
-  .flex-items:nth-child(4) {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-
-
-  }
-
-
-  
-  /* DEMO-SPECIFIC STYLES */
-  .Overskrift h1 {
-
-    font-size: 800%;
-    color: #fff;
-    font-family: monospace;
-    text-align: center;
-    margin: 5% 5% 0% 5%;
-  }
-
-  .Overskrift p {
-    color: aliceblue;
-    font-size: 150%;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 0;
-    margin-top: 1.5%; 
+.flex-container p {
+  font-size: 120%;
 
 }
 
-  .myButton {
-    background-color:transparent;
-    border:1px solid hsl(204, 55%, 36%);
-    display:inline-block;
-    cursor:pointer;
-    color:#000000;
-    font-size:15px;
-    font-weight:200;
-    padding:2px 38px;
-    text-decoration:none;
-    margin-top: 2%;
-  }
-  .myButton:hover {
-    background-color:hsl(204, 55%, 36%);
-  }
-  .myButton:active {
-    position:relative;
-    top:1px;
-  }
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  line-height: 200%;
+  padding: 2%;
+  margin: 1% 5% 0% 5%;
 
-  .musikk {
-    text-align: center;
-    margin-top: 1%;
+}
 
-  }
-  
-  /* TESTE UT */
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  line-height: 200%;
+  padding: 2%;
+  margin: 1% 5% 5% 5%;
 
 
 
-  .line-1{
-      position: relative;
-      top: 50%;  
-      width: 24em;
-      margin: 0 auto;
-      border-right: 2px solid rgba(255,255,255,.75);
-      font-size: 180%;
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-      transform: translateY(-50%);    
+}
+
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+
+
+}
+
+.flex-items:nth-child(4) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+
+
+}
+
+
+
+/* DEMO-SPECIFIC STYLES */
+.Overskrift h1 {
+
+  font-size: 800%;
+  color: #fff;
+  font-family: monospace;
+  text-align: center;
+  margin: 5% 5% 0% 5%;
+}
+
+.Overskrift p {
+  color: aliceblue;
+  font-size: 150%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 0;
+  margin-top: 1.5%;
+
+}
+
+.myButton {
+  background-color: transparent;
+  border: 1px solid hsl(204, 55%, 36%);
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 200;
+  padding: 2px 38px;
+  text-decoration: none;
+  margin-top: 2%;
+}
+
+.myButton:hover {
+  background-color: hsl(204, 55%, 36%);
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.musikk {
+  text-align: center;
+  margin-top: 1%;
+}
+
+.MusikkParagraf p {
+  font-size: 200%;
+
+}
+
+
+
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation typewriter */
+.anim-typewriter {
+  animation: typewriter 3s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
   }
-  
-  /* Animation */
-  .anim-typewriter{
-    animation: typewriter 3s steps(44) 1s 1 normal both,
-               blinkTextCursor 500ms steps(44) infinite normal;
+
+  to {
+    width: 31em;
   }
-  @keyframes typewriter{
-    from{width: 0;}
-    to{width: 31em;}
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
   }
-  @keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
-    to{border-right-color: transparent;}
+
+  to {
+    border-right-color: transparent;
   }
-  .bilder{
-    display: flex;
-    
-    }
-    
-    .bilde, .bilde2 {
-    margin-left: 0;
-    width: 50%;
-    }
+}
+
+.bilder {
+  display: flex;
+
+}
+
+.bilde,
+.bilde2 {
+  margin-left: 0;
+  width: 50%;
+}
 
 
 
 /* MEDIA QUERY START ---------------------------------------------------------------------------------------------------------*/
-
 
 
 @media (min-width:320px) {
@@ -405,33 +431,44 @@ font-size: 120%;
     text-align: center;
     margin: 5% 5% 0% 5%;
   }
+
   .Overskrift p {
     color: aliceblue;
-    font-size: 65%;
+
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-family: 'Oswald', sans-serif;
     font-weight: 10;
-    margin-top: 10%; 
+    margin-top: 10%;
+  }
+
+  .musikk {
+    text-align: center;
+    margin-top: 6%;
+  }
+}
+
+@media (max-width:773px) {
+  .line-1 {
+    display: none;
+
+  }
 
 }
-.musikk {
-  text-align: center;
-  margin-top: 6%;
-}
 
-}
 @media (max-width:400px) {
 
-.bilder{
-  display: none;
+  .bilder {
+    display: none;
   }
 }
 
 
+
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
- 
+
   .Overskrift h1 {
 
     font-size: 900%;
@@ -440,74 +477,83 @@ font-size: 120%;
     text-align: center;
     margin: 5% 5% 0% 5%;
   }
+
   .Overskrift p {
     color: aliceblue;
-    font-size: 120%;
+
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-family: 'Oswald', sans-serif;
     font-weight: 10;
-    margin-top: 10; 
+    margin-top: 10;
 
-}
-
-
-}
-@media (max-width: 576px) {
- 
-
-.bilde2{
-  display: none;
-  
-}
-
-}
-
-
-@media (min-width: 837px) {
-
-  .Overskrift h1 {
-
-    font-size: 800%;
-    color: #fff;
-    font-family: monospace;
-    text-align: center;
-    margin: 5% 5% 0% 5%;
   }
 
-  .Overskrift p {
-    color: aliceblue;
-    font-size: 150%;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 10;
-    margin-top: 1.5%; 
-
-}
-.musikk {
-  text-align: center;
-  margin-top: 2%;
-
-}
-
-
-}
+  @media (min-width: 774px) {
+    .MusikkParagraf {
+      display: none;
+    }
 
 
 
 
+  }
 
-@media (min-width: 992px) {
-
-
-}
+  @media (max-width: 576px) {
 
 
+    .bilde2 {
+      display: none;
 
-@media (min-width: 1200px) {
+    }
 
 
-}
+  }
 
-/* MEDIA QUERY SLUTT ---------------------------------------------------------------------------------------------------------------*/
+
+  @media (min-width: 837px) {
+
+    .Overskrift h1 {
+
+      font-size: 800%;
+      color: #fff;
+      font-family: monospace;
+      text-align: center;
+      margin: 5% 5% 0% 5%;
+    }
+
+    .Overskrift p {
+      color: aliceblue;
+      font-size: 150%;
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 10;
+      margin-top: 1.5%;
+
+    }
+
+    .musikk {
+      text-align: center;
+      margin-top: 2%;
+
+    }
+
+    .MusikkParagraf {
+      display: none;
+    }
+
+
+  }
+
+
+
+
+
+  @media (min-width: 992px) {}
+
+
+
+  @media (min-width: 1200px) {}
+
+  /* MEDIA QUERY SLUTT ---------------------------------------------------------------------------------------------------------------*/

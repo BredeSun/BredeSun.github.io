@@ -13,13 +13,14 @@
 
     <title> Reservere Bord </title>
 </head>
-<body style="background-image: url('Bilder/backring.png')">
+<body style=background-color:#222;>
 
     <div class="Reservation">
                                 <!-- Venstre side-->
         
 
-        <div class="tilbakeKnapp" onclick="location.href='Reservations.html';" style="cursor: pointer;"> <i class="fa-solid fa-arrow-left"></i> </div>
+        <div class="tilbakeKnapp" onclick="location.href='Reservations.html';" style="cursor: pointer;" tabindex="1"> <i class="fa-solid fa-arrow-left"></i>
+             </div>
 
         <header class="RegInfo">
             <h1 class="topptekst"> Reservation </h1>
@@ -29,8 +30,8 @@
 
                             <div id="RegValg">
 
-                                <div class="ReserverBord" onclick=bytteForm(); role="link">Reserve table </div>
-                                <div class="BookEvent" onclick= bytteForm2(); role="link">Book event </div>
+                                <div class="ReserverBord" onclick=bytteForm(); role="link" tabindex="2">Reserve table </div>
+                                <div class="BookEvent" onclick= bytteForm2(); role="link" tabindex="3">Book event </div>
                                 <div id="klump"></div>
 
                             
@@ -39,8 +40,7 @@
         </header>
 
        
-
-                                <!-- Utfyllingsskjema-->
+<main>                       <!-- Utfyllingsskjema-->
         <section class="RegSkjema">
            
 
@@ -107,23 +107,44 @@
                             <input type="submit" value="Submit">
                         
                         </form>
-
                     </div>
-                          
-
+                </div>
         </section>
+    </main>
 
 
-
-    </div>
-
-
-
-
-
-
-
-
+    <section>
+        <footer class="INDEX-footer" tabindex="0">
+            <section class="INDEX-container">
+                <div class="INDEX-random INDEX-footer-container">
+                    <ul>
+                        <h3>Generell Info</h3>
+                        <p>Vi ønsker deg hjertelig velkommen til våres restaurant! Er det noe du lurer på? Ikke nøl med å ringe oss eller sende mail, så tar vi kontakt fortløpende! Vi gleder oss til å se deg!</p>
+                    </ul>
+                </div>
+                <div class="INDEX-åpningstider INDEX-footer-container">
+                    <ul>
+                        <h3>Åpningstider</h3>
+                        <li>Mandag: 12-20:30</li>
+                        <li>Tirsdag: 12-20:30</li>
+                        <li>Onsdag: 12-20:30</li>
+                        <li>Torsdag: 12-20:30</li>
+                        <li>Fre-Søn: 12-20:30</li>
+                    </ul>
+                </div>
+                <div class="INDEX-info INDEX-footer-container">
+                    <ul>
+                        <h3>Kontakt oss</h3>
+                        <li>Telefon <br>+4712345678</li>
+                        <li>Epost <br>Marias@marias.no </li>
+                        <li>Adresse <br>oslogate1234 Oslo, Norway</li>
+                    </ul>
+                </div>
+            </section>
     
+            <section class="INDEX-copyright">
+                Copyright @ Marias.com</section>
+        </footer>
+    </section>
 </body>
 </html>
