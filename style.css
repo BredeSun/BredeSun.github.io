@@ -1162,7 +1162,7 @@ a:hover {
   /*---NAV BAR-----------------------*/
   /*---NAV BAR SLUTT-----------------*/
   /*---INDEX START-------------------*/
-  .INDEX-about-div2, .INDEX-booking-div1 img{
+  .INDEX-about-div2 img, .INDEX-booking-div1 img{
     width: 100%;
   }
   
