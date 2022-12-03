@@ -1162,6 +1162,10 @@ a:hover {
   /*---NAV BAR-----------------------*/
   /*---NAV BAR SLUTT-----------------*/
   /*---INDEX START-------------------*/
+  .INDEX-about-div2, .INDEX-booking-div1 img{
+    width: 100%;
+  }
+  
   .INDEX-container {
     flex-direction: column;
 
@@ -1172,7 +1176,7 @@ a:hover {
   }
 
   .INDEX-footer-container>ul {
-    width: 320px;
+    width: 100%;
     padding: 20px;
   }
 
