@@ -19,7 +19,7 @@
                                 <!-- Venstre side-->
         
 
-        <div class="tilbakeKnapp" onclick="location.href='index.html';"> <i class="fa-solid fa-arrow-left"></i> </div>
+        <div class="tilbakeKnapp" onclick="location.href='Reservations.html';" style="cursor: pointer;"> <i class="fa-solid fa-arrow-left"></i> </div>
 
         <header class="RegInfo">
             <h1 class="topptekst"> Reservation </h1>
@@ -29,8 +29,8 @@
 
                             <div id="RegValg">
 
-                                <div class="ReserverBord" onclick=bytteForm();>Reserve table </div>
-                                <div class="BookEvent" onclick= bytteForm2();> Book event </div>
+                                <div class="ReserverBord" onclick=bytteForm(); role="link">Reserve table </div>
+                                <div class="BookEvent" onclick= bytteForm2(); role="link">Book event </div>
                                 <div id="klump"></div>
 
                             
@@ -41,12 +41,12 @@
        
 
                                 <!-- Utfyllingsskjema-->
-        <section class="RegSkjemaBord">
+        <section class="RegSkjema">
            
 
                     <div id="RegSkjemBord">
                         
-                        <form id="form1" name="myForm" action="/test.html" onsubmit="return validateForm()" method="post">
+                        <form id="form1" name="myForm" onsubmit="return validateForm()" method="post">
 
                         <label id="navn" for="fname">Name* </label> <br> <br>
                             <input type="text" style="font-family: Montserrat, Times, serif;" id="fname" name="fornavn" placeholder="First name"> 
@@ -110,9 +110,6 @@
 
                     </div>
                           
-                
-
-            
 
         </section>
 
