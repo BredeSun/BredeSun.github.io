@@ -9,7 +9,8 @@ body{
 
 /* Menyen: bildet -------------------------------------------------------------------------------------------------------*/
 
-.MenyenBilde {background-image: url("Bar6.jpeg");
+.MenyenBilde {
+  background-image: url("Bar6.jpeg");
     position: relative;
     height: 55vh;
     background-position: center;

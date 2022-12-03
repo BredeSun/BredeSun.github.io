@@ -29,42 +29,43 @@
 
 </head>
 
-<body>
+<body class="meny-body">
     <!--  MENYEN: ------------------------------------------------------------------------------------->
-
-    <section class="Meny">
+<header>
     <!--  Menyen: navbar ----------------------------------------------------------------------------------------------->
-    <nav class="Navbaren">
+    <nav>
         <ul class="menu">
-            <li class="logo"><a href="index.html">La Marias()</a></li>
-            <li class="item"><a href="index.html">Home</a></li>
-            <li class="item"><a href="Meny.html">Meny</a></li>
-            <li class="item"><a href="Reservations.html">Reserve a table</a></li>
-            <li class="item"><a href="#">About us</a></li>
-            </li>
-            <li class="item button"><a href="#">Data1200</a></li>
-            <li class="item button secondary"><a href="showoff.html">FunPage</a></li>
+            <li class="logo"><a href="index.html" accesskey="1">La Marias()</a></li>
+            <li class="item"><a href="index.html" accesskey= "1">Home</a></li>
+            <li class="item"><a href="Meny.html" accesskey="">Meny</a></li>
+            <li class="item"><a href="Reservations.html">Booking</a></li>
+            <li class="item button"><a href="#">Accessibility</a></li>
+            <li class="item button secondary"><a href="funpage.html">TopicalPage</a></li>
             <li class="toggle"><span class="bars"></span></li>
         </ul>
     </nav>
+</header>
     
     <!--  Menyen: teksten på bildet----------------------------------------------------------------------------------------------->
-
-    <div class="MenyenBilde"> 
-        <h1 id = MenyOverskriftBilde> MENY</h1>
-        <h2 id= "MenyUnderoverskriftBilde">
+    <section class="Meny-hero"> 
+        <div class="Meny-hero-indre">
+        <h1>Meny</h1>
+        <p>
             The mission is simple: serve delicious, affordable food
         </br>
             that guests will want to return to week after week.
-    </h2>
+    </p>
     </div>
+    </section>
 
+<main>
+    <section>
     <!--  Menyen: rettene ----------------------------------------------------------------------------------------------->
     <div class="MenyenRetter">
 
     <!-- Menyen: forretter ---------------->
         <div class= "MenyOverskriftTo"> 
-            <h2 class>FORRETTER</h2> 
+            <h2 id="FørsteOverskrift">FORRETTER</h2> 
         </div>
         
         <div class= "MenyContainer">
@@ -193,5 +194,43 @@
   
     </div>
     </section>
+</main>
+
+<section>
+    <footer class="INDEX-footer" tabindex="0">
+        <section class="INDEX-container">
+            <div class="INDEX-random INDEX-footer-container">
+                <ul>
+                    <h3>Random</h3>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita cum veniam harum,
+                        possimus dolor id est, dolore dolorem ducimus perspiciatis eos excepturi blanditiis quas
+                        asperiores minima iure explicabo ad!</li>
+                </ul>
+            </div>
+            <div class="INDEX-åpningstider INDEX-footer-container">
+                <ul>
+                    <h3>Åpningstider</h3>
+                    <li>Mandag: 14-23</li>
+                    <li>Tirsdag: 14-23</li>
+                    <li>Onsdag: 14-23</li>
+                    <li>Torsdag: 14-23</li>
+                    <li>Fre-Lør: 14-01</li>
+                    <li>Søndag: 14-23</li>
+                </ul>
+            </div>
+            <div class="INDEX-info INDEX-footer-container">
+                <ul>
+                    <h3>Kontakt oss</h3>
+                    <li>Telefon <br>+4712345678</li>
+                    <li>Epost <br>Marias@marias.no </li>
+                    <li>Adresse <br>oslogate1234 Oslo, Norway</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="INDEX-copyright">
+            Copyright @ Marias.com</section>
+    </footer>
+</section>
 </body>
 </html>

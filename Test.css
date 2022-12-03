@@ -3,23 +3,29 @@ body{
     color:white;
 }
 
+.ViderePåReservasjoner{
+    margin-top: 50px;
+}
 
 .DATAOverskrift{
     display: flex;
     justify-content: center;
-    bottom: 40px;
     font-weight: 100;
     font-size: 100%;
 }
 
-.DATAContainer1 div, .DATAContainer3 div{
-    border: 1px #ccc solid; 
+.LaMariaInfoOver2{
+    margin-top: 50PX;
+    justify-content: center;
+}
+
+.LaMariaInfoPara1 div, .LaMariaInfoPara3 div, .InfoBoks3{
     padding: 2%;
     margin: 2%;
 }
 
-.DATAContainer2 div{
-    border: 1px #ccc solid; 
+.LaMariaInfoPara2 div{
+    border: 1px #ccc solid;  
     padding: 1%;
     flex-basis: 60%;
 }
@@ -28,58 +34,66 @@ body{
     display: none;
 }
 
-.DATAContainer1, .DATAContainer2, .DATAContainer3{
+.LaMariaInfoPara1, .LaMariaInfoPara2, .LaMariaInfoPara3, .LaMariaInfoPara4{
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 10px;
    
 }
 
-.DATABoks1{
-    flex-basis: 23.5%;
-    width: fit-content;
+.InfoBoks1{
+    flex-basis: 25%;
+
 }
 
-.DATABoks4{
+
+ .BildeBoks1{
+    flex-basis: 60%;
+    transition: 1s;
+
+} 
+
+.InfoBoks2{
+    flex-basis: 60%;
+    transition: 1s;
+
+} 
+
+.InfoBoks3, .BildeBoks2{
+    margin-bottom: 10px;
     flex-basis: 20%;
 }
 
- .DATABoks2{
-    flex-basis: 60%;
-    transition: 1s;
-
-} 
-
-.DATABoks3{
-    flex-basis: 60%;
-    transition: 1s;
-
-} 
-
-
-
-.DATAContainer2{
-    position: relative;
-    height: 67vh;
-    background-position: center;
-    background-repeat: no-repeat;
+.LaMariaInfoPara2{
+    position: flex;
+    height: 20%;
 }
 
-.DATAContainer4{
+.LaMariaInfoPara4{
     display: flex;
     justify-content: center;
 }
 
 
-.DATAContainer4 div{
+.LaMariaInfoPara4 div{
     display: flex;
-    border:1px solid #ccc;
     justify-content: center;
     flex-basis: 40%;
     height: 50vh;
-    margin-right: 5px;
     height: auto;
 }
+
+    .BildeBoks1{
+        flex-basis: 50%;
+    }
+    .BildeBoks2{
+        margin-right: 10px;
+        margin-left: 10px;
+
+    }
+    .InfoBoks3{
+        margin-left: 5px;
+    }
 
 
 
@@ -87,10 +101,11 @@ body{
     
 }
 @media (max-width:426px) { /* ---------------- */
-    
-
-    .DATAContainer4 {
+    .LaMariaInfoPara4 {
         flex-direction: column;
+    }
+    .BildeBoks2{
+        flex-basis: 25%;
     }
 
 }
@@ -116,16 +131,14 @@ body{
 
 @media (max-width: 768px) { /* ---------------- */
 
-
-    .DATAContainer1 {
+    .LaMariaInfoPara1 {
         flex-direction: column;
     }
-    .DATABoks2{
+    .BildeBoks1{
         flex-basis: 50%;
     }
-    .DATABoks3{
+    .InfoBoks2{
         flex-basis: 60%;
-
     }
 }
 

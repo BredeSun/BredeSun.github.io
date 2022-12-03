@@ -71,7 +71,7 @@ $(function () {
 
         else{
             alert("Your reservation have been registred");
-            window.location.href="Reservations.html";
+            return true;
             
         }
     };
