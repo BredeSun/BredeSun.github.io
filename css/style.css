@@ -964,8 +964,6 @@ body {
 
 @media (max-width: 768px) { /* Medium devices (tablets, 768px and up) -------------------------------------------------------- */
 
-  /*---NAV BAR-----------------------*/
-  /*---NAV BAR SLUTT-----------------*/
   /*---INDEX START-------------------*/
   .INDEX-about-div2 img, .INDEX-booking-div1 img{
     width: 100%;
@@ -980,8 +978,9 @@ body {
    }
 
    .INDEX-hero {
-    width: 0 auto;
-    height: 0 auto;
+    width: auto;
+    min-height: 100vh;
+    background-attachment: scroll;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Bilder/pexels-pizza-liten.jpg');
   }
   /*---INDEX SLUTT------------------*/
@@ -1092,7 +1091,7 @@ body {
 
  .Meny-hero img{
   height: 50vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/pasta.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Bilder/pasta.jpg');
 }
   /*---MENY SLUTT--------------------*/
 
