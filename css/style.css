@@ -485,7 +485,8 @@ body {
   
   /*---------------------------------------------------Seksjon------------------------------------------------------------------*/
   
-  
+  /* Setter alt innholdet på siden som flex */
+
   .Reservation {
     display: flex;
     flex-wrap: wrap;
@@ -496,6 +497,9 @@ body {
   
   /*------------------------------------------------- Info  side-----------------------------------------------------------------------*/
 
+
+  /* Lager linjen inder skjema-valg, og teks tydelighet i boksene */
+
   #RegValg {
     font-weight: 700;
     position: absolute;
@@ -504,6 +508,9 @@ body {
     margin-left: 22px;
 
    }
+
+   /* Klmupen som flytter seg utifra hvilke skjema som vises */
+
     #klump{
       content: '';
       height: 6px;
@@ -514,6 +521,9 @@ body {
       bottom: 0;
       left: 35px;
     }
+
+
+   /* Styling for div ("Knappene") posisjon og farge */
 
     .ReserverBord, .BookEvent{
       padding: 5px 12px;
@@ -528,6 +538,9 @@ body {
       margin-right: 5px;
     }
 
+
+    /* Styling og possisjonering av pilen som går tilbake */
+
     .tilbakeKnapp{ 
       color: white;
       position: absolute;
@@ -538,7 +551,7 @@ body {
       
     }
 
-
+    /* Styling av overskrift og paragraf på venstre side */
 
   .RegInfo {
     display: relative;
@@ -573,6 +586,9 @@ body {
   
   
   /*--------------------------------------------------Utfyllingsskjema--------------------------------------------------------------------------*/
+  
+  /* Posisjon og størrelse på skjema div */
+  
   .RegSkjema {
     font-weight: 700;
     display: flex;
@@ -594,6 +610,8 @@ body {
 
     }
 
+    /* Størrelse på skjemaet */
+
     .RegSkjema #form{
       width: 200%;
       position: relative;
@@ -607,11 +625,17 @@ body {
       margin: auto;
     }
 
+
+    /* Gjemmer Event skjemaet */
+
     #RegSkjemEvent {
       width: 100%;
       margin: auto;
       display: none;
     }
+
+
+    /* Styling av inputboksene i skjemaene */
 
     .RegSkjema label {
     margin-left: 10px;
@@ -703,29 +727,7 @@ body {
 /*---MENY SLUTT-------------------*/
 
   /*---RESERVASJONER START----------*/
-  .Reservationsreservasjoner{
-    width: 100%;
-  }
-  .ReservationsHeader h1 {
-    font-size: 60px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 0;
-    font-family: Montserrat, Times, serif;
-  }
-
-  /*Paragraf under Overskrift*/
-  .ReservationsHeader p {
-    font-size: 20px;
-    font-family: Montserrat, Times, serif;
-    font-style: normal;
-    letter-spacing: .02em;
-    text-transform: none;
-    line-height: 1.8em;
-    line-height: 1.8;
-    color: rgb(255, 255, 255);
-    width: 200px;
-
-  }
+  
   /*---RESERVASJONER SLUTT-- --------*/
 
   /*---REGSKJEMA START-- --------*/

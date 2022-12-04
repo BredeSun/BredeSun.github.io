@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-/* NAVNBAR - START  tatt fra : -----------------------------------------------------------------------------------------------*/
+/* NAVNBAR - START : -----------------------------------------------------------------------------------------------*/
 /* Basic styling */
 body {
   font-family: Montserrat, Times, serif;
@@ -227,7 +227,7 @@ body {
 }
 
 
-.flex-items:nth-child(1) {
+.flex-items {
   display: block;
   flex-grow: 0;
   flex-shrink: 1;
@@ -235,24 +235,20 @@ body {
   align-self: auto;
   order: 0;
   line-height: 200%;
-  padding: 2%;
   margin: 1% 5% 0% 5%;
-
 }
 
-.flex-items:nth-child(2) {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-  line-height: 200%;
-  padding: 2%;
-  margin: 1% 5% 5% 5%;
 
-
-
+.bilder, .bilder2 {
+  display: flex;
+  flex-basis: 40%;
+  border-bottom: 2px solid black;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.bilde1 figure, .bilde2 figure {
+  
+  margin: 0;
 }
 
 
@@ -296,7 +292,6 @@ body {
 }
 
 
-
 /* MEDIA QUERY START ---------------------------------------------------------------------------------------------------------*/
 
 
@@ -327,6 +322,10 @@ body {
   .line-1 {
     display: none;
 
+  }
+
+  .bilder, .bilder2 {
+    flex-wrap: wrap;
   }
 
 }
@@ -403,10 +402,6 @@ body {
     }
 
   }
-
-
-
-
 
   @media (min-width: 992px) {}
 
