@@ -786,15 +786,6 @@ body {
   /*---INDEX SLUTT---------------*/
 
   /*---MENY START----------------*/
-
-  .MenyContainer,
-  .MenyOverskriftTo {
-    flex-direction: column;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
  .Meny-hero p{
   font-size: 20px;
  }
@@ -802,15 +793,6 @@ body {
  .Meny-hero h1{
   font-size: 40px;
  }
-
- .Meny-hero {
-  height: 100%;
-}
-
-
-
-
-
 /*---MENY SLUTT-------------------*/
 
   /*---RESERVASJONER START----------*/
@@ -883,13 +865,7 @@ body {
   /*---INDEX SLUTT-----------------*/
 
   /*---MENY START------------------*/
-  .MenyContainer,
-  .MenyOverskriftTo {
-    flex-direction: column;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
 
  .Meny-hero p{
   font-size: 20px;
@@ -899,14 +875,7 @@ body {
   font-size: 40px;
  }
 
-  
- .Meny-hero {
-  height: 50vh;
-}
-
-
-
-  /*---MENY SLUTT-------------------*/
+    /*---MENY SLUTT-------------------*/
 
   /*---RESERVASJONER START----------*/
   .ReservationsHeader h1 {
@@ -987,14 +956,7 @@ body {
   /*---INDEX SLUTT------------------*/
 
   /*---MENY START-------------------*/
-  .MenyContainer,
-  .MenyOverskriftTo {
-    flex-direction: column;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+ 
  .Meny-hero p{
   font-size: 20px;
  }
@@ -1003,9 +965,12 @@ body {
   font-size: 40px;
  }
 
- .Meny-hero img{
-  height: 50vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Bilder/kokk.jpg');
+ .Meny-hero {
+  width: auto;
+  min-height: 100vh;
+  background-attachment: scroll;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Bilder/kokkLiten.jpg');
 }
 
   /*---MENY SLUTT-------------------*/
@@ -1074,14 +1039,6 @@ body {
 
   /*---MENY START--------------------*/
 
-  .MenyContainer,
-  .MenyOverskriftTo {
-    flex-direction: column;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
  .Meny-hero p{
   font-size: 20px;
  }
@@ -1090,10 +1047,6 @@ body {
   font-size: 40px;
  }
 
- .Meny-hero img{
-  height: 50vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Bilder/pasta.jpg');
-}
   /*---MENY SLUTT--------------------*/
 
 }
