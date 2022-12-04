@@ -555,7 +555,6 @@ a:hover {
 
 .ReservationsHeader button {
   font-weight: 700;
-  
   background-color: transparent;
   font-size: large;
   color: white;
@@ -569,70 +568,9 @@ a:hover {
 }
 
 
-/*Tekst som ligger i footer*/
-.Reservationsparagrafer {
-  font-weight: 700;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas: "paragraf1 paragraf2 paragraf3";
-  grid-column-gap: 150px;
-  grid-row-gap: 0px;
-  text-align: center;
-  align-content: center;
-  margin-top: 40px;
-  letter-spacing: 0em;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: .02em;
-  text-transform: none;
-  line-height: 1.8em;
-  font-size: 1rem;
-  line-height: 1.8;
-  color: rgb(0, 0, 0);
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-
-/*Margin over til H3*/
-
-.Reservationsparagraf1 p,
-.Reservationsparagraf2 p,
-.Reservationsparagraf3 p {
-  margin-top: 15px;
-  font-weight: 700;
-}
-
-.Reservationsparagraf1 {
-  grid-area: paragraf1;
-
-}
-
-.Reservationsparagraf2 {
-  grid-area: paragraf2;
-
-
-}
-
-.Reservationsparagraf3 {
-  grid-area: paragraf3;
-
-
-}
-
-/*Overskrift - footer*/
-.Reservationsfooterh3 {
-  font-weight: 200;
-  font-style: normal;
-  letter-spacing: 0em;
-  text-transform: none;
-  line-height: 1.4em;
-  font-size: 25px;
-}
-
 /*-----------Info del-------------*/
 .ViderePåReservasjoner{
+  background-color: black;
   color:white;
   margin-top: 50px;
 }
