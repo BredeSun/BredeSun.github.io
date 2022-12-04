@@ -786,6 +786,15 @@ body {
   /*---INDEX SLUTT---------------*/
 
   /*---MENY START----------------*/
+
+  .MenyContainer,
+  .MenyOverskriftTo {
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
  .Meny-hero p{
   font-size: 20px;
  }
@@ -793,6 +802,8 @@ body {
  .Meny-hero h1{
   font-size: 40px;
  }
+
+
 /*---MENY SLUTT-------------------*/
 
   /*---RESERVASJONER START----------*/
@@ -865,7 +876,13 @@ body {
   /*---INDEX SLUTT-----------------*/
 
   /*---MENY START------------------*/
-
+  .MenyContainer,
+  .MenyOverskriftTo {
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
  .Meny-hero p{
   font-size: 20px;
@@ -875,7 +892,8 @@ body {
   font-size: 40px;
  }
 
-    /*---MENY SLUTT-------------------*/
+
+  /*---MENY SLUTT-------------------*/
 
   /*---RESERVASJONER START----------*/
   .ReservationsHeader h1 {
@@ -956,7 +974,14 @@ body {
   /*---INDEX SLUTT------------------*/
 
   /*---MENY START-------------------*/
- 
+  .MenyContainer,
+  .MenyOverskriftTo {
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
  .Meny-hero p{
   font-size: 20px;
  }
@@ -1038,6 +1063,14 @@ body {
   /*---INDEX SLUTT-------------------*/
 
   /*---MENY START--------------------*/
+
+  .MenyContainer,
+  .MenyOverskriftTo {
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
  .Meny-hero p{
   font-size: 20px;
