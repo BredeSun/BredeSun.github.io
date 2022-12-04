@@ -21,6 +21,8 @@
 .footer-container h4 {
     margin-bottom: 20px;
     font-size: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
 }
 
 /*Generellinfo seksjon*/
@@ -74,6 +76,14 @@
 .footer-list {
     display: flex;
     justify-content: center;
+}
+/*Farge til link epost */
+.epost a {
+    color: rgb(0, 0, 0);
+}
+/*Farge til link adresse */
+.adresse a {
+    color: black;
 }
 
 /*Gjør at footer passer til andre skjerm størrelser */

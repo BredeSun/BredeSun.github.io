@@ -272,7 +272,8 @@ body {
 }
 
 .bilder {
-  width: fit-content;  
+  width: fit-content;
+  height: fit-content;
   display: flex;
   justify-content: center;
   margin-left: 10px;
@@ -280,15 +281,15 @@ body {
 
 }
 
-.bilde{
-  
+.bilde1 {
+
   width: 100%;
   height: 100%;
-  
   text-align: center;
-  
+
 }
-.bilde img{
+
+.bilde1 img {
   width: 80%;
   height: 100%;
   padding: 10px 0 10px 0;
@@ -299,12 +300,11 @@ body {
   margin-left: 10px;
 }
 
-.bilde2 img{
-  flex-basis: 40%;
+.bilde2 img {
+  
   width: 100%;
   height: 100%;
-  margin:0;
-  padding: 2px 2px 0px 50px;
+  padding: 10px 0 10px 0;
 }
 
 
@@ -451,7 +451,8 @@ body {
   .bilder {
     flex-wrap: wrap;
   }
-  .bilde{
+
+  .bilde {
     width: 100%;
     margin-right: 5%;
     margin-left: 5%;
@@ -460,9 +461,7 @@ body {
 
 }
 
-@media (max-width:400px) {
-
-}
+@media (max-width:400px) {}
 
 
 
@@ -491,59 +490,59 @@ body {
   }
 }
 
-  @media (min-width: 774px) {
-    .MusikkParagraf {
-      display: none;
-    }
-
-
-
-
-  }
-
-  @media (min-width: 837px) {
-
-    .Overskrift h1 {
-
-      font-size: 800%;
-      color: #fff;
-      font-family: monospace;
-      text-align: center;
-      margin: 5% 5% 0% 5%;
-    }
-
-    .Overskrift p {
-      color: aliceblue;
-      font-size: 150%;
-      text-align: center;
-      font-family: 'Lato', sans-serif;
-      font-family: 'Oswald', sans-serif;
-      font-weight: 10;
-      margin-top: 1.5%;
-
-    }
-
-    .musikk {
-      text-align: center;
-      margin-top: 2%;
-
-    }
-
-    .MusikkParagraf {
-      display: none;
-    }
-
-
+@media (min-width: 774px) {
+  .MusikkParagraf {
+    display: none;
   }
 
 
 
 
+}
 
-  @media (min-width: 992px) {}
+@media (min-width: 837px) {
+
+  .Overskrift h1 {
+
+    font-size: 800%;
+    color: #fff;
+    font-family: monospace;
+    text-align: center;
+    margin: 5% 5% 0% 5%;
+  }
+
+  .Overskrift p {
+    color: aliceblue;
+    font-size: 150%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 10;
+    margin-top: 1.5%;
+
+  }
+
+  .musikk {
+    text-align: center;
+    margin-top: 2%;
+
+  }
+
+  .MusikkParagraf {
+    display: none;
+  }
+
+
+}
 
 
 
-  @media (min-width: 1200px) {}
 
-  /* MEDIA QUERY SLUTT ---------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 992px) {}
+
+
+
+@media (min-width: 1200px) {}
+
+/* MEDIA QUERY SLUTT ---------------------------------------------------------------------------------------------------------------*/

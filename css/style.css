@@ -1,9 +1,15 @@
+* {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: #222;
 }
 
-/*-------------------------------INDEX START--------------------------------------*/
+/* INDEX - START ----------------------------------------------------------------------------------------------/*
+
 
 /*Styling for forisde bilde + hero */
 .INDEX-hero {
@@ -67,7 +73,7 @@ body {
 .INDEX-booking-div1 img, .INDEX-about-div2 img {
   height: 300px;
 }
-
+/*Styler hele flex-container*/
   .INDEX-booking-flexcontainer {
     background-color:#222;
     display: flex;
@@ -112,16 +118,17 @@ body {
     font-family: unset;
   }
 
-  /*Styling av effekter når man holder over knapp*/
+  /*Styling av effekter når man holder over "Utforsk" knapp*/
 .INDEX-booking-div2 button:hover {
-    cursor: pointer;
+    cursor:pointer;
     background-color: white;
     color:black;
   }
 
-/*-------------------------------INDEX SLUTT--------------------------------------*/
 
-/* MENY  - SILJE  - START -----------------------------------------------------------------------------------------------*/
+/* INDEX - SLUTT ----------------------------------------------------------------------------------------------/*
+
+/* MENY - START ----------------------------------------------------------------------------------------------/*
 
 /* -- Bakgrunnsbildet --*/
 .meny-body {
@@ -143,6 +150,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+/* -- Link til bildet: Bilde av Anna Shvets: https://www.pexels.com/nb-no/bilde/kokk-kjokken-matlaging-rett-5953496/--*/
+
 
 /* -- Overskiften, på bildet--*/
 .Meny-hero h1 {
@@ -203,300 +212,218 @@ body {
 }
 
 
-/* MENY  - SILJE - SLUTT ----------------------------------------------------------------------------------------------/*
+/* MENY - SLUTT ---------------------------------------------------------------------------------------------------------/*
 
 
-/* RESERVASJONER - EMIL - START -----------------------------------------------------------------------------------------*/
+/* BOOKING - EMIL - START -----------------------------------------------------------------------------------------*/
 
 
-.Reservationsreservasjoner {
-  font-weight: 700;
-  background-image: url(/Bilder/BG.jpg); 
-  min-height: 800px;
-  background-position: center;
-  background-repeat: no-repeat;
+/*-------------------------------BOOKING START--------------------------------------*/
+
+.BOOKING-hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*Bilde hentet fra: https://www.pexels.com/photo/bridge-over-aker-river-near-buildings-5683079/ */
+
+  background-image: linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.5)), url('/Bilder/akerbrygge.jpg');
   background-size: cover;
-  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-/*Overskrift reservations*/
-.ReservationsHeader {
-
+/*Dette er teksten til bildet*/
+.BOOKING-hero h1 {
   text-align: center;
-  margin-top: 100px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  height: fit-content;
-
+  color: white;
+  margin-bottom: 0.5em;
+  font-size: 4em;
+}
+/*Styling av p element i hero*/
+.BOOKING-hero p {
+  color: white;
+  font-size: 189%;
+  margin: 0%11%1%11%;
 }
 
-/*Overskrift*/
+/*Styling knapp i hero*/
+.BOOKING-hero-indre button {
 
-.ReservationsHeader h1 {
-  position: relative;
-
-  text-align: center;
-  font-size: 90px;
-  color: rgb(255, 255, 255);
-  margin-bottom: 0;
-  
-
-}
-
-/*Paragraf under Overskrift*/
-.ReservationsHeader p {
-  margin-left: auto;
-  margin-right: auto;
-  width: 550px;
-  text-align: center;
-  letter-spacing: 0em;
-  
-  font-style: normal;
-  letter-spacing: .02em;
-  text-transform: none;
-  line-height: 1.8em;
-  font-size: 1rem;
-  line-height: 1.8;
-  color: rgb(255, 255, 255);
-}
-
-/*Knapp reserver bord*/
-
-.ReservationsHeader button {
-  font-weight: 700;
-  
   background-color: transparent;
   font-size: large;
   color: white;
   border-color: white;
   border-width: 1px;
-  padding: 10px 2em;
+  margin-top: 20px;
   transition: all .5s ease;
-  margin-top: 25px;
-  font-family: Montserrat, Times, serif;
-
-}
-
-
-/*Tekst som ligger i footer*/
-.Reservationsparagrafer {
-  font-weight: 700;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas: "paragraf1 paragraf2 paragraf3";
-  grid-column-gap: 150px;
-  grid-row-gap: 0px;
   text-align: center;
-  align-content: center;
-  margin-top: 40px;
-  letter-spacing: 0em;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: .02em;
-  text-transform: none;
-  line-height: 1.8em;
-  font-size: 1rem;
-  line-height: 1.8;
+  padding: 10px 30px;
+  font-family: unset;
+}
+/*Styling av knapp:hover i hero*/
+.BOOKING-hero button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
-
-/*Margin over til H3*/
-
-.Reservationsparagraf1 p,
-.Reservationsparagraf2 p,
-.Reservationsparagraf3 p {
-  margin-top: 15px;
-  font-weight: 700;
-}
-
-.Reservationsparagraf1 {
-  grid-area: paragraf1;
-
-}
-
-.Reservationsparagraf2 {
-  grid-area: paragraf2;
+/*Om maria´s info flex-conatiner*/
 
 
-}
 
-.Reservationsparagraf3 {
-  grid-area: paragraf3;
-
-
-}
-
-/*Overskrift - footer*/
-.Reservationsfooterh3 {
-  font-weight: 200;
-  font-style: normal;
-  letter-spacing: 0em;
-  text-transform: none;
-  line-height: 1.4em;
-  font-size: 25px;
-}
-
-/*-----------Info del-------------*/
-.ViderePåReservasjoner{
-  color:white;
-  margin-top: 50px;
-}
-
-.DATAOverskrift{
+.BOOKING-info-flexcontainer {
+  background-color: white;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-weight: 100;
-  font-size: 100%;
+  text-align: left;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 
-.LaMariaInfoOver{
-  margin-top: 50PX;
+/*Styling av div*/
+.BOOKING-info-flexcontainer > div {
+  width: 500px;
+  font-size: 20px;
+  padding: 30px;
+}
+/*Styling av h2 tag*/
+.BOOKING-info-flexcontainer h2 {
+  color: black;
+  font-size: 1.5em;
+}
+/*Styling av p tag*/
+.BOOKING-info-flexcontainer p {
+  color: black;
+  padding-top: 10px;
+}
+/*Styling av bilde i div*/
+.BOOKING-info-div2 img {
+  height: 300px;
+}
+
+/*arrangemanger seksjon*/
+
+
+
+/*Styling av flexcontainer*/
+.BOOKING-arrangemanger-flexcontainer {
+  background-color: rgb(83, 83, 87);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  text-align: left;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+/*Styling av div*/
+.BOOKING-arrangemanger-flexcontainer > div {
+  width: 800px;
+  font-size: 20px;
+  padding: 30px;
+}
+/*Styling av h3 element*/
+.BOOKING-arrangemanger-flexcontainer h3 {
+  color: white;
+  font-size: 1.5em;
   text-align: center;
 }
-
-.LaMariaInfoPara1 div, .LaMariaInfoPara3 div, .InfoBoks3{
-  padding: 2%;
-  margin: 2%;
+/*Styling av p element*/
+.BOOKING-arrangemanger-flexcontainer p {
+  color: white;
+  padding-top: 15px;
+}
+/*Styling av bilde i div*/
+.BOOKING-arrangemanger-div2 img {
+  height: 500px;
 }
 
-.LaMariaInfoPara2 div{
-  border: 1px #ccc solid;  
-  padding: 1%;
-  flex-basis: 60%;
-}
+/*Gavekort seksjon*/
 
-#winterBy {
-  display: none;
-}
 
-.LaMariaInfoPara1, .LaMariaInfoPara2, .LaMariaInfoPara3, .LaMariaInfoPara4{
+
+/*Styling av flex-container*/
+.BOOKING-gavekort-flexcontainer {
+  background-color: rgb(79 105 82);
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: center;
-  margin-top: 10px;
- 
+  align-content: center;
+  text-align: left;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+/*Styling av div*/
+.BOOKING-gavekort-flexcontainer>div {
+  width: 500px;
+  font-size: 20px;
+  padding: 30px;
+}
+/*Styling av h4 element*/
+.BOOKING-gavekort-flexcontainer h4 {
+  color: white;
+  font-size: 1.5em;
+}
+/*Styling av p element*/
+.BOOKING-gavekort-flexcontainer p {
+  color: white;
+  padding-top: 10px;
+
+}
+/*Styling av knapp*/
+.BOOKING-gavekort-div2 button {
+  background-color: transparent;
+  font-size: large;
+  color: white;
+  border-color: white;
+  border-width: 1px;
+  margin-top: 20px;
+  transition: all .5s ease;
+  text-align: center;
+  padding: 10px 30px;
+  font-family: unset;
+}
+/*Styling av knapp:hover*/
+.BOOKING-gavekort-div2 button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+/*Styling av bilde i div*/
+.BOOKING-gavekort-div1 img {
+  height: 300px;
 }
 
-.InfoBoks1{
-  flex-basis: 25%;
-
-}
-
-
-.BildeBoks1{
-  flex-basis: 60%;
-  transition: 1s;
-
-} 
-
-.InfoBoks2{
-  flex-basis: 60%;
-  transition: 1s;
-
-} 
-
-.InfoBoks3, .BildeBoks2{
-  margin-bottom: 10px;
-  flex-basis: 20%;
-}
-
-.LaMariaInfoPara2{
-  position: flex;
-  height: 20%;
-}
-
-.LaMariaInfoPara4{
-  display: flex;
-  justify-content: center;
-}
-
-
-.LaMariaInfoPara4 div{
-  display: flex;
-  justify-content: center;
-  flex-basis: 40%;
-  height: 50vh;
-  height: auto;
-}
-
-  .BildeBoks1{
-      flex-basis: 50%;
-  }
-  .BildeBoks2{
-      margin-right: 10px;
-      margin-left: 10px;
-
-  }
-  .InfoBoks3{
-      margin-left: 5px;
-  }
-
-    @media (max-width:426px) { /* ---------------- */
-    .LaMariaInfoPara4 {
-        flex-direction: column;
-    }
-    .BildeBoks2{
-        flex-basis: 25%;
-    }
-
-    }
-    @media (max-width: 550px) { /* ---------------- */
-
-
-    #winterBy {
-    display: block;
-    }
-    }
-    @media (max-width: 720px) { /* ---------------- */
-
-
-    #winterBy {
-      display:flex;
-    }
-
-    #utsideBilde{
-    display: none;   
-    }
-    }
-
-    @media (max-width: 768px) { /* ---------------- */
-
-    .LaMariaInfoPara1 {
-      flex-direction: column;
-    }
-  
-    .BildeBoks1{
-      flex-basis: 50%;
-    }
-    .InfoBoks2{
-      flex-basis: 60%;
-    }
-}
-
-/* RESERVASJONER - SLUTT -----------------------------------------------------------------------------------------*/
+/* BOOKING - SLUTT -----------------------------------------------------------------------------------------*/
 
 
 /* RESERVASJON SKJEMA - START -----------------------------------------------------------------------------------------*/
   
   /*---------------------------------------------------Seksjon------------------------------------------------------------------*/
-  
-  /* Setter alt innholdet på siden som flex */
+ 
+  /*Setter text decoration på footer på epost og adressetag */
+  .epost:hover, .adresse:hover {
+    text-decoration: underline;
+  }
 
+  /* Setter alt innholdet på siden som flex */
   .Reservation {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     font-family: Montserrat, Times, serif;
-    margin-bottom: 80px;
+    margin-bottom: 194px;
   }
   
   /*------------------------------------------------- Info  side-----------------------------------------------------------------------*/
-
 
   /* Lager linjen inder skjema-valg, og teks tydelighet i boksene */
 
@@ -509,8 +436,8 @@ body {
 
    }
 
-   /* Klmupen som flytter seg utifra hvilke skjema som vises */
 
+   /* Klmupen som flytter seg utifra hvilke skjema som vises */
     #klump{
       content: '';
       height: 6px;
@@ -523,8 +450,7 @@ body {
     }
 
 
-   /* Styling for div ("Knappene") posisjon og farge */
-
+    /* Styling for div ("Knappene") posisjon og farge */
     .ReserverBord, .BookEvent{
       padding: 5px 12px;
       background: linear-gradient(45deg,#90aaae,rgb(127, 149, 117));
@@ -540,7 +466,6 @@ body {
 
 
     /* Styling og possisjonering av pilen som går tilbake */
-
     .tilbakeKnapp{ 
       color: white;
       position: absolute;
@@ -550,6 +475,7 @@ body {
       margin-left: 20px;
       
     }
+
 
     /* Styling av overskrift og paragraf på venstre side */
 
@@ -610,6 +536,7 @@ body {
 
     }
 
+
     /* Størrelse på skjemaet */
 
     .RegSkjema #form{
@@ -624,7 +551,6 @@ body {
       width: 100%;
       margin: auto;
     }
-
 
     /* Gjemmer Event skjemaet */
 
@@ -727,7 +653,29 @@ body {
 /*---MENY SLUTT-------------------*/
 
   /*---RESERVASJONER START----------*/
-  
+  .Reservationsreservasjoner{
+    width: 100%;
+  }
+  .ReservationsHeader h1 {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    font-family: Montserrat, Times, serif;
+  }
+
+  /*Paragraf under Overskrift*/
+  .ReservationsHeader p {
+    font-size: 20px;
+    font-family: Montserrat, Times, serif;
+    font-style: normal;
+    letter-spacing: .02em;
+    text-transform: none;
+    line-height: 1.8em;
+    line-height: 1.8;
+    color: rgb(255, 255, 255);
+    width: 200px;
+
+  }
   /*---RESERVASJONER SLUTT-- --------*/
 
   /*---REGSKJEMA START-- --------*/
@@ -870,6 +818,39 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Bilder/pexels-pizza-liten.jpg');
   }
   /*---INDEX SLUTT------------------*/
+
+  /*---BOOKING SLUTT------------------*/
+
+   /*Tilpasser booking side til mobiltelefoner*/
+   .BOOKING-info-div2 img, .BOOKING-arrangemanger-div2 img, .BOOKING-gavekort-div1 img {
+    width: 100%;
+  }
+
+  /*Styler height til bilde i arrangemanger*/
+  .BOOKING-arrangemanger-div2 img {
+      height: 300px;
+  }
+  
+  /*Styling av h element i hero*/
+  .BOOKING-hero h1{
+    font-size: 40px;
+   }
+   /*Styling av p element i hero*/
+  .BOOKING-hero p{
+    font-size: 20px;
+   }
+
+   /*Gjør slik at hero bildet passer på mobil*/
+  .BOOKING-hero {
+    width: auto;
+    min-height: 100vh;
+    background-attachment: scroll;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Bilder/akerbrygge.jpg');
+  }
+
+    /*---BOOKING SLUTT------------------*/
+
 
   /*---MENY START-------------------*/
   .MenyContainer,
