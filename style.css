@@ -525,7 +525,6 @@ a:hover {
 
 .ReservationsHeader h1 {
   position: relative;
-  background-color: black;
   text-align: center;
   font-size: 90px;
   color: rgb(255, 255, 255);
@@ -541,7 +540,6 @@ a:hover {
   width: 550px;
   text-align: center;
   letter-spacing: 0em;
-  background-color: black;
   font-style: normal;
   letter-spacing: .02em;
   text-transform: none;
@@ -570,7 +568,6 @@ a:hover {
 
 /*-----------Info del-------------*/
 .ViderePåReservasjoner{
-  background-color: black;
   color:white;
   margin-top: 50px;
 }
