@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/pexels-eneida-nieves-905847.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Bilder/pexels-eneida-nieves-905847.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -223,7 +223,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/kokk.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Bilder/kokk.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -313,7 +313,7 @@ body {
 
 .Reservationsreservasjoner {
   font-weight: 700;
-  background-image: url(Bilder/BG.jpg); 
+  background-image: url(/Bilder/BG.jpg); 
   min-height: 800px;
   background-position: center;
   background-repeat: no-repeat;
