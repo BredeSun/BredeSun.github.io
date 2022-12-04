@@ -3,202 +3,6 @@ body {
   padding: 0;
 }
 
-/* NAVNBAR - START -----------------------------------------------------------------------------------------------*/
-/* Basic styling */
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  height: auto;
-}
-
-body {
-  font-family: Montserrat, Times, serif;
-}
-
-nav {
-  background: #222;
-  padding: 5px 20px;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.logo a:hover {
-  text-decoration: none;
-}
-
-.menu li {
-  font-size: 16px;
-  padding: 15px 5px;
-  white-space: nowrap;
-}
-
-.logo a,
-.toggle a {
-  font-size:20px;
-
-
-}
-
-.button.secondary {
-  border-bottom: 1px #444 solid;
-}
-
-/* Mobile menu */
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.toggle {
-  order: 1;
-}
-
-.item.button {
-  order: 2;
-}
-
-.item {
-  width: 100%;
-  text-align: center;
-  order: 3;
-  display: none;
-}
-
-.item.active {
-  display: block;
-}
-
-/* Navbar Toggle */
-.toggle {
-  cursor: pointer;
-}
-
-.bars {
-  background: #999;
-  display: inline-block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-
-.bars:before,
-.bars:after {
-  background: #999;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-.bars:before {
-  top: 5px;
-}
-
-.bars:after {
-  top: -5px;
-}
-
-/* Tablet menu */
-@media all and (min-width: 468px) {
-  .menu {
-    justify-content: center;
-  }
-
-  .logo {
-    flex: 1;
-  }
-
-  .item.button {
-    width: auto;
-    order: 1;
-    display: block;
-  }
-
-  .toggle {
-    order: 2;
-  }
-
-  .button.secondary {
-    border: 0;
-  }
-
-  .button a {
-    padding: 7.5px 15px;
-    background: teal;
-    border: 1px #006d6d solid;
-    border-radius: 50em;
-  }
-
-  .button.secondary a {
-    background: transparent;
-  }
-
-  .button a:hover {
-    text-decoration: none;
-    transition: all .25s;
-  }
-
-  .button:not(.secondary) a:hover {
-    background: #006d6d;
-    border-color: #005959;
-  }
-
-  .button.secondary a:hover {
-    color: #ddd;
-  }
-}
-
-/* Desktop menu */
-@media all and (min-width: 768px) {
-  .item {
-    display: block;
-    width: auto;
-  }
-
-  .toggle {
-    display: none;
-  }
-
-  .logo {
-    order: 0;
-  }
-
-  .item {
-    order: 1;
-  }
-
-  .button {
-    order: 2;
-  }
-
-  .menu li {
-    padding: 15px 10px;
-  }
-
-  .menu li.button {
-    padding-right: 0;
-  }
-}
-
-/* NAVNBAR - SLUTT -----------------------------------------------------------------------------------------------*/
-
 /*-------------------------------INDEX START--------------------------------------*/
 
 .INDEX-hero {
@@ -459,6 +263,7 @@ a:hover {
 .MenyContainer,
 .MenyOverskriftTo {
   display: flex;
+  height: 100%;
   justify-content: center;
   background-color: #222;
   color: #ccc;
@@ -499,6 +304,13 @@ a:hover {
 
 /* RESERVASJONER - EMIL - START -----------------------------------------------------------------------------------------*/
 
+
+
+
+
+
+
+
 .Reservationsreservasjoner {
   font-weight: 700;
   background-image: url(Bilder/BG.jpg); 
@@ -525,6 +337,7 @@ a:hover {
 
 .ReservationsHeader h1 {
   position: relative;
+
   text-align: center;
   font-size: 90px;
   color: rgb(255, 255, 255);
@@ -540,6 +353,7 @@ a:hover {
   width: 550px;
   text-align: center;
   letter-spacing: 0em;
+  
   font-style: normal;
   letter-spacing: .02em;
   text-transform: none;
@@ -553,6 +367,7 @@ a:hover {
 
 .ReservationsHeader button {
   font-weight: 700;
+  
   background-color: transparent;
   font-size: large;
   color: white;
@@ -565,6 +380,68 @@ a:hover {
 
 }
 
+
+/*Tekst som ligger i footer*/
+.Reservationsparagrafer {
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "paragraf1 paragraf2 paragraf3";
+  grid-column-gap: 150px;
+  grid-row-gap: 0px;
+  text-align: center;
+  align-content: center;
+  margin-top: 40px;
+  letter-spacing: 0em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .02em;
+  text-transform: none;
+  line-height: 1.8em;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgb(0, 0, 0);
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+/*Margin over til H3*/
+
+.Reservationsparagraf1 p,
+.Reservationsparagraf2 p,
+.Reservationsparagraf3 p {
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+.Reservationsparagraf1 {
+  grid-area: paragraf1;
+
+}
+
+.Reservationsparagraf2 {
+  grid-area: paragraf2;
+
+
+}
+
+.Reservationsparagraf3 {
+  grid-area: paragraf3;
+
+
+}
+
+/*Overskrift - footer*/
+.Reservationsfooterh3 {
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  line-height: 1.4em;
+  font-size: 25px;
+}
 
 /*-----------Info del-------------*/
 .ViderePåReservasjoner{
@@ -856,11 +733,11 @@ a:hover {
       margin-top: 10px;
       }
     
-      #email, #email2{
+      #email{
       width: 69%;
       }
   
-      #tlf, #tlf2{
+      #tlf{
       width: 44%;
       }
   
@@ -898,13 +775,17 @@ a:hover {
     height: 50vh;
   }
 
+  .INDEX-hero img {
+    width: 100%;
+  }
 
   .INDEX-hero h1 {
-    font-size: 1em;
+    font-size: 40px;
   }
   
   .INDEX-hero p {
-    font-size: 70%;
+    font-size: 20px;
+    
   }
 
 
@@ -930,8 +811,9 @@ a:hover {
 
  .Meny-hero  {
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/pasta.jpg');
 }
+
+
 
 
 
@@ -951,7 +833,6 @@ a:hover {
   /*Paragraf under Overskrift*/
   .ReservationsHeader p {
     font-size: 20px;
-    
     font-family: Montserrat, Times, serif;
     font-style: normal;
     letter-spacing: .02em;
@@ -1001,18 +882,14 @@ a:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/pexels-eneida-nieves-905847.jpg');
   }
 
-  .INDEX-container {
-    flex-direction: column;
-  }
+   .INDEX-hero h1{
+    font-size: 40px;
+   }
 
-  .INDEX-åpningstider {
-    margin: 0;
-  }
-
-  .INDEX-footer-container>ul {
-    width: 400px;
-    padding: 20px;
-  }  
+   .INDEX-hero p{
+    font-size: 20px;
+   }
+  
   /*---INDEX SLUTT-----------------*/
 
   /*---MENY START------------------*/
@@ -1032,10 +909,13 @@ a:hover {
   font-size: 40px;
  }
 
+  
  .Meny-hero {
   height: 50vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/kokk.jpg');
 }
+
+
+
   /*---MENY SLUTT-------------------*/
 
   /*---RESERVASJONER START----------*/
@@ -1101,31 +981,13 @@ a:hover {
     width: 100%;
   }
   
-  .INDEX-container {
-    flex-direction: column;
+  .INDEX-hero h1{
+    font-size: 40px;
+   }
 
-  }
-
-  .INDEX-åpningstider {
-    margin: 0;
-  }
-
-  .INDEX-footer-container>ul {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .INDEX-booking-div1, .INDEX-about-div2{
-    margin-right: 10px;
-}
-
-.INDEX-hero h1 {
-  font-size: 3em;
-}
-
-.INDEX-hero p {
-  font-size: 200%;
-}
+   .INDEX-hero p{
+    font-size: 20px;
+   }
 
   /*---INDEX SLUTT------------------*/
 
@@ -1146,7 +1008,7 @@ a:hover {
   font-size: 40px;
  }
 
- .Meny-hero {
+ .Meny-hero img{
   height: 50vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/kokk.jpg');
 }
@@ -1233,34 +1095,16 @@ a:hover {
   font-size: 40px;
  }
 
- .Meny-hero {
+ .Meny-hero img{
   height: 50vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/kokk.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/pasta.jpg');
 }
   /*---MENY SLUTT--------------------*/
 
-  /*---RESERVASJONER START-----------*/
-  /*---RESERVASJONER SLUTT-----------*/
 }
 
-
-@media (max-width: 1200px) { /* X-Large devices (large desktops, 1200px and up)---------------------------------------------- */
-
-  /*---NAV BAR----------------------*/
-  /*---NAV BAR SLUTT----------------*/
-  /*---INDEX START------------------*/
-  /*---INDEX SLUTT-------------------*/
-
-  /*---MENY START--------------------*/
-
-  .MenyenBilde {
-    height: 400px;
-  }
-
-  /*---MENY SLUTT-------------------*/
-
-  /*---RESERVASJONER START----------*/
-  /*---RESERVASJONER SLUTT-- --------*/
+/* X-Large devices (large desktops, 1200px and up)---------------------------------------------- */
+@media (max-width: 1200px) { 
 
   /*---REGSKJEMA START-- --------*/
 
@@ -1297,9 +1141,6 @@ a:hover {
   /*---INDEX START------------------*/
   /*---INDEX SLUTT------------------*/
   /*---MENY START-------------------*/
-  .MenyenBilde {
-    height: 400px;
-  }
   /*---MENY SLUTT-------------------*/
   /*---RESERVASJONER START----------*/
   /*---RESERVASJONER SLUTT-- --------*/

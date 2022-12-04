@@ -1,57 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Data1200.css"></linkspacerel>
+    <link rel="stylesheet" href="css/accesebility.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/06bd8c43bd.js" crossorigin="anonymous"></script>
+    <title>Accessibility Page</title>
 </head>
+
 <body>
-
-<section class = "Data1200"></section> 
-
-<div class = "DATAOverskrift">
-<h1 id= "DATAOverskrift"> Accessibility</h1>
-<hr id = "DATALinje">
-</div>
-
-<div class = "DATAContainer1">
-    <div class = "DATABoks1">
-         <p> hoi</p>
-    </div>
-</div>
-
-<div class = "DATAContainer2">
-    <div class = "DATABoks2"> boks 2</div>
-    <div class = "DATABoks2"> boks 3</div>
-</div>
-
-<div class = "DATAContainer2">
-    <div class = "DATABoks2"> boks 4</div>
-    <div class = "DATABoks2"> boks 5</div>
-</div>
+    <!-- NavBar -->
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="index.html" accesskey="1">Accessibility Page</a></li>
+                </li>
+                <li class="item button"><a href="#">TopicalPage</a></li>
+                <li class="item button secondary"><a href="index.html">La Maria´s</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+        </nav>
+    </header>
 
 
-<div class = "DATAContainer3"> 
-    <div class = "DATABoks3"> 
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta sunt aliquid blanditiis pariatur, praesentium rem vel cupiditate, temporibus maiores nam voluptatum dolorum aliquam nesciunt maxime veniam delectus cumque tempora!</p>
+    <section class="innhold">
+        <!-- Overskrift -->
+        <div class="Overskrift">
+            <h1>Accessibility Page</h1>
+        </div>
 
-        </div> 
-</div>
 
-<div class = "DATAContainer3"> 
-    <div class = "DATABoks3">   
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta sunt aliquid blanditiis pariatur, praesentium rem vel cupiditate, temporibus maiores nam voluptatum dolorum aliquam nesciunt maxime veniam delectus cumque tempora!</p>
-        </div> 
-</div>
+        <!-- Flex-container  -->
+        <div class="flex-container">
+            <!-- Flex-items1-->
+            <div class="flex-items">
+                <h3>Eksamensoppgaven høsten 2022 </h3>
+                <p>Eksamensoppgaven for DATA1200 semesteret høsten 2022 var å lage en nettside for et "Eventhus". Vi
+                    skulle lage en hovedside,
+                    meny, og booking for resturanten. I tillegg skulle det lages en "Accessibility" side, og en "Topical
+                    Page". <br>
+                    Formålet med denne siden, er å vise hvordan vi har testet nettsiden mtp. universell
+                    utforming.
 
-</section>        
+                    Vi brukte i starten hverandre som "sjekk" når det kom til fargebruk, bilder, og font
+                    størresle/tykkelse. Det at noen andre
+                    så over det du hadde jobbet med lenge ga gode tilbakemeldinger på ting man selv kanskje ikke så. Det
+                    var viktig å gå over
+                    ofte, slik at vi ikke gjorde ferdig storde deler av nettsiden for å så se at det ikke passet med
+                    resten. Da ville det blitt
+                    mye ekstra arbeid, noe vi ønsket å unngå.
+
+                    Fra forelesningene og modulene tilgjengelige på canvas hadde vi tilgang på gode kilder for å teste
+                    nettiden for forskjellige
+                    tilgjengelighetsutfordringer. Vi testet først alle html sidene hver for seg på nettsiden
+                    "https://wave.webaim.org/"
+                </p>
+
+                <div class="bilder">
+
+                    <figure class="bilde">
+                        <img src="css/Bilder/sideTest1.png" alt="Trulli" style="width:100%">
+                        <figcaption>En av testene vi gjorde på "Booking" siden </figcaption>
+                    </figure>
+
+                    <figure class="bilde2">
+                        <img src="bilde2.jpg" alt="Trulli" style="width:100%">
+                        <figcaption>Photo: Rosemary Ketchum </figcaption>
+                    </figure>
+                </div>
+                <!-- Button 1-->
+
+                <a href="https://wave.webaim.org/"
+                    target="_blank" class="myButton">Prøv din nettside</a>
+            </div>
+            <!-- Flex-items2-->
+            <div class="flex-items">
+                <h3>Vår mening om utsagnet «The person who invented the train, invented the train crash»</h3>
+                <p>Utsagnet «The person who invented the train, invented the train chrash» mener vi verken er riktig
+                    eller feil. Man må bryte ned ideen før man kan finne grunnlaget for hvem som er ansvarlig for evt.
+                    utfall. Vi mener at det er bakgrunnen, og hvordan produktet utvikles som avgjør om det er
+                    innovatøren som kan gjøres ansvarlig for fremtidige utfall med produktet.
+                    Med eksempelet tog kan man jo tenke at bakgrunnen for at det ble utviklet var å effektivisere
+                    transport av mennesker og varer. Ansvaret for de ulykkene som har oppstått mellom nå og da de første
+                    togene ble tatt i bruk, mener vi ikke kan legges på oppfinneren av toget, men brukeren under
+                    hendelsen.
+                    På den andre siden kan ikke alltid innovatører slippe unna ansvaret når grunnlaget for oppfinnelsen
+                    er på feil side av skalaen. Et eksempel her er hvordan atomvåpen ble brukt under 2. verdenskrig.
+                    16.juli 1945 ble den første prøvesprengningen av atomvåpen utført i New Mexico, USA, og allerede
+                    samme år ble det brukt som atomvåpen for første gang i krig. 3 dager senere slapp USA enda en
+                    atombombe over byen Nagasaki, Japan. (FN-sambandet, 02.06.2022)
+                    Selv om dette er de to eneste atombombene som har blitt brukt i krig er atomvåpen fortsatt en reel
+                    trussel da flere stormakter som Russland fortsatt har atomvåpen. Mange medier og forskere har i
+                    etterkant av Russland-Ukraina krigen ment at denne konflikten kan utvikle seg til en atomkrig. Her
+                    mener vi at oppfinnerne av kjernefysiske våpen må stå for mye av ansvaret da dette allerede var ment
+                    for et ikke-fredelig mål.
+                    Mange oppfinnelser har påvirket verden i en retning hvor brukere vrir om på hva som egentlig er
+                    meningen bak ideen og misbruker oppfinnelsen. Her har vi medisiner som blir misbrukt, bioteknologi
+                    som blir brukt i krig og sosiale medier som eksempelvis blir brukt til å spre propaganda, frykt og
+                    falsk informasjon.
+                    Vi mener at ansvaret bak oppfinnelsen er fordelt mellom oppfinner og bruker. Oppfinneren har
+                    hovedansvaret med hva formålet med oppfinnelsen er, mens brukeren har ansvar for hva de bruker den
+                    til og i hvilke retninger de tar ideen.
+                </p>
+                <!-- Button 2-->
+                <a href="#" target="_blank" class="myButton">Les mer</a>
+
+                <div class="bilder">
+
+                    <figure class="bilde">
+                        <img src="css/Bilder/sideTest1.png" alt="Trulli" style="width:100%">
+                        <figcaption>En av testene vi gjorde på "Booking" siden </figcaption>
+                    </figure>
+
+                    <figure class="bilde2">
+                        <img src="bilde2.jpg" alt="Trulli" style="width:100%">
+                        <figcaption>Photo: Rosemary Ketchum </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+            
+
+    </section>
+
+
+
 </body>
+
 </html>
-
-
-<!--   -->
-
-  

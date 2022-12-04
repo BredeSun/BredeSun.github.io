@@ -1,0 +1,560 @@
+* {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* NAVNBAR - START  tatt fra : -----------------------------------------------------------------------------------------------*/
+/* Basic styling */
+body {
+  font-family: Montserrat, Times, serif;
+}
+
+nav {
+  background: transparent;
+  padding: 5px 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+
+.menu li {
+  font-size: 16px;
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+
+.logo a,
+.toggle a {
+  font-size: 28px;
+  font-family: 'Pacifico', cursive;
+
+}
+
+.button.secondary {
+  border-bottom: 1px #444 solid;
+}
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle {
+  order: 1;
+}
+
+.item.button {
+  order: 2;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+
+.item.active {
+  display: block;
+}
+
+/* Navbar Toggle */
+.toggle {
+  cursor: pointer;
+}
+
+.bars {
+  background: rgb(255, 255, 255);
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.bars:before,
+.bars:after {
+  background: rgb(255, 255, 255);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.bars:before {
+  top: 5px;
+}
+
+.bars:after {
+  top: -5px;
+}
+
+/* Tablet menu */
+@media all and (min-width: 468px) {
+  .menu {
+    justify-content: center;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+
+  .toggle {
+    order: 2;
+  }
+
+  .button.secondary {
+    border: 0;
+  }
+
+  .button a {
+    padding: 7.5px 15px;
+    background: teal;
+    border: 1px #006d6d solid;
+    border-radius: 50em;
+  }
+
+  .button.secondary a {
+    background: transparent;
+  }
+
+  .button a:hover {
+    text-decoration: none;
+    transition: all .25s;
+  }
+
+  .button:not(.secondary) a:hover {
+    background: #006d6d;
+    border-color: #005959;
+  }
+
+  .button.secondary a:hover {
+    color: #ddd;
+  }
+}
+
+/* Desktop menu */
+@media all and (min-width: 768px) {
+  .item {
+    display: block;
+    width: auto;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .logo {
+    order: 0;
+  }
+
+  .item {
+    order: 1;
+  }
+
+  .button {
+    order: 2;
+  }
+
+  .menu li {
+    padding: 15px 10px;
+  }
+
+  .menu li.button {
+    padding-right: 0;
+  }
+}
+
+/* NAVNBAR - SLUTT -----------------------------------------------------------------------------------------------*/
+
+/* Bakgrunnsfarge animation -----------------------------------------------------------------------------------------------*/
+@keyframes color {
+  0% {
+    background: #ff493c;
+  }
+
+  20% {
+    background: #ffc130;
+  }
+
+  40% {
+    background: #36e8ff;
+  }
+
+  60% {
+    background: #82ff62;
+  }
+
+  80% {
+    background: #ffbebe;
+  }
+
+  100% {
+    background: #ff54f6;
+  }
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: calc(100vh - 8em);
+  animation: color 30s infinite linear;
+  background-color: #29668f;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+/* Flex-Container*/
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  margin-top: 35%;
+  background-color: rgb(255, 255, 255);
+  width: auto;
+}
+
+.flex-container h3 {
+  font-size: 200%;
+}
+
+.flex-container p {
+  font-size: 120%;
+
+}
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  line-height: 200%;
+  padding: 2%;
+  margin: 1% 5% 0% 5%;
+
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  line-height: 200%;
+  padding: 2%;
+  margin: 1% 5% 5% 5%;
+
+
+
+}
+
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+
+
+}
+
+.flex-items:nth-child(4) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+
+
+}
+
+
+
+/* DEMO-SPECIFIC STYLES */
+.Overskrift h1 {
+
+  font-size: 800%;
+  color: #fff;
+  font-family: monospace;
+  text-align: center;
+  margin: 5% 5% 0% 5%;
+}
+
+.Overskrift p {
+  color: aliceblue;
+  font-size: 150%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 0;
+  margin-top: 1.5%;
+
+}
+
+.myButton {
+  background-color: transparent;
+  border: 1px solid hsl(204, 55%, 36%);
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 200;
+  padding: 2px 38px;
+  text-decoration: none;
+  margin-top: 2%;
+}
+
+.myButton:hover {
+  background-color: hsl(204, 55%, 36%);
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.musikk {
+  text-align: center;
+  margin-top: 1%;
+}
+
+.MusikkParagraf p {
+  font-size: 200%;
+
+}
+
+
+
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation typewriter */
+.anim-typewriter {
+  animation: typewriter 3s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 31em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.bilder {
+  display: flex;
+
+}
+
+.bilde,
+.bilde2 {
+  margin-left: 0;
+  width: 50%;
+}
+
+
+
+/* MEDIA QUERY START ---------------------------------------------------------------------------------------------------------*/
+
+
+@media (min-width:320px) {
+
+  .Overskrift h1 {
+
+    font-size: 600%;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    text-align: center;
+    margin: 5% 5% 0% 5%;
+  }
+
+  .Overskrift p {
+    color: aliceblue;
+
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 10;
+    margin-top: 10%;
+  }
+
+  .musikk {
+    text-align: center;
+    margin-top: 6%;
+  }
+}
+
+@media (max-width:773px) {
+  .line-1 {
+    display: none;
+
+  }
+
+}
+
+@media (max-width:400px) {
+
+  .bilder {
+    display: none;
+  }
+}
+
+
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+  .Overskrift h1 {
+
+    font-size: 900%;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    text-align: center;
+    margin: 5% 5% 0% 5%;
+  }
+
+  .Overskrift p {
+    color: aliceblue;
+
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 10;
+    margin-top: 10;
+
+  }
+}
+
+  @media (min-width: 774px) {
+    .MusikkParagraf {
+      display: none;
+    }
+
+
+
+
+  }
+
+  @media (max-width: 576px) {
+
+
+    .bilde2 {
+      display: none;
+
+    }
+
+
+  }
+
+
+  @media (min-width: 837px) {
+
+    .Overskrift h1 {
+
+      font-size: 800%;
+      color: #fff;
+      font-family: monospace;
+      text-align: center;
+      margin: 5% 5% 0% 5%;
+    }
+
+    .Overskrift p {
+      color: aliceblue;
+      font-size: 150%;
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 10;
+      margin-top: 1.5%;
+
+    }
+
+    .musikk {
+      text-align: center;
+      margin-top: 2%;
+
+    }
+
+    .MusikkParagraf {
+      display: none;
+    }
+
+
+  }
+
+
+
+
+
+  @media (min-width: 992px) {}
+
+
+
+  @media (min-width: 1200px) {}
+
+  /* MEDIA QUERY SLUTT ---------------------------------------------------------------------------------------------------------------*/
