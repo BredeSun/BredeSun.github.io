@@ -194,35 +194,6 @@ a:hover {
 
 /* NAVNBAR - SLUTT -----------------------------------------------------------------------------------------------*/
 
-/* Bakgrunnsfarge animation -----------------------------------------------------------------------------------------------*/
-@keyframes color {
-  0% {
-    background: #ff493c;
-  }
-
-  20% {
-    background: #ffc130;
-  }
-
-  40% {
-    background: #36e8ff;
-  }
-
-  60% {
-    background: #82ff62;
-  }
-
-  80% {
-    background: #ffbebe;
-  }
-
-  100% {
-    background: #ff54f6;
-  }
-}
-
-
-
 body {
   margin: 0;
   padding: 0;

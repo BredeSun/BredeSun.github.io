@@ -771,20 +771,14 @@ body {
   /*---NAV BAR-------------------*/
   /*---NAV BAR SLUTT-------------*/
   /*---INDEX START---------------*/
-  .INDEX-hero {
-    height: 50vh;
-  }
-
-  .INDEX-hero img {
-    width: 100%;
-  }
+  
 
   .INDEX-hero h1 {
-    font-size: 40px;
+    font-size: 20px;
   }
   
   .INDEX-hero p {
-    font-size: 20px;
+    font-size: 10px;
     
   }
 
@@ -809,7 +803,7 @@ body {
   font-size: 40px;
  }
 
- .Meny-hero  {
+ .Meny-hero {
   height: 100%;
 }
 
@@ -877,13 +871,9 @@ body {
   /*---NAV BAR-------------------*/
   /*---NAV BAR SLUTT-------------*/
   /*----INDEX START---------------*/
-  .INDEX-hero {
-    height: 60vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/pexels-eneida-nieves-905847.jpg');
-  }
 
    .INDEX-hero h1{
-    font-size: 40px;
+    font-size: 30px;
    }
 
    .INDEX-hero p{
@@ -989,6 +979,11 @@ body {
     font-size: 20px;
    }
 
+   .INDEX-hero {
+    width: 0 auto;
+    height: 0 auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Bilder/pexels-pizza-liten.jpg');
+  }
   /*---INDEX SLUTT------------------*/
 
   /*---MENY START-------------------*/
