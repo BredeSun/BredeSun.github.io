@@ -856,11 +856,11 @@ a:hover {
       margin-top: 10px;
       }
     
-      #email{
+      #email, #email2{
       width: 69%;
       }
   
-      #tlf{
+      #tlf, #tlf2{
       width: 44%;
       }
   
