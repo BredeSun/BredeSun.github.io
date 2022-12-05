@@ -1,6 +1,9 @@
 # Final-Assignment-DATA-1200
 
 
+Eksamensbesvarelse : https://bredesun.github.io/
+
+
 Hentet insirasjon for bytte av skjema på booking side: https://www.youtube.com/watch?v=uQTpr23G5yY 
 Inspirasjon for Script til å bytte bookingskjema: https://sebhastian.com/javascript-show-hide-div-onclick-toggle/
 
