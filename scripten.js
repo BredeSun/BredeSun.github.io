@@ -31,22 +31,6 @@ function bytteForm() {
 }
 
 
-console.log(bordP.style);
-console.log(eventP.style);
-
-
-
-function bytteParagraf() {
-  document.getElementById('infoBord').style.display = 'none';
-  document.getElementById('infoEvent').style.display = 'flex';
-}
-function bytteParagraf2() {
-  document.getElementById('infoBord').style.display = 'flex';
-  document.getElementById('infoEvent').style.display = 'none';
-}
-
-
-
 $(function () {
   $(".toggle").on("click", function () {
     if ($(".item").hasClass("active")) {

@@ -270,49 +270,28 @@ body {
   padding: 2%;
   margin: 1% 5% 0% 5%;
 }
-
 .bilder {
-  width: fit-content;
-  height: fit-content;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-left: 10px;
-  margin-right: 10px;
-
-}
-
-.bilde1 {
-
   width: 100%;
-  height: 100%;
-  text-align: center;
-
 }
 
-.bilde1 img {
-  width: 80%;
-  height: 100%;
-  padding: 10px 0 10px 0;
-}
-
-.bilde2 {
-  text-align: center;
-  margin-left: 10px;
-}
-
-.bilde2 img {
-  
+.bilder .bilde1 img {
+  height: 400px;
   width: 100%;
-  height: 100%;
-  padding: 10px 0 10px 0;
+}
+.bilder .bilde2 img {
+  height: 400px;
+  width: 100%;
 }
 
 
 #mer {
-  margin-top: 50px;
+  margin-top: 15px;
   width: fit-content;
-  margin-left: 5%;
-  border-radius: 5px;
+
+
 }
 
 
@@ -345,9 +324,8 @@ body {
   color: #000000;
   font-size: 15px;
   font-weight: 200;
-  padding: 2px 38px;
+  padding: 2px 25px;
   text-decoration: none;
-  margin-top: 2%;
 }
 
 .myButton:hover {
@@ -448,21 +426,25 @@ body {
     display: none;
   }
 
-  .bilder {
-    flex-wrap: wrap;
-  }
 
-  .bilde {
-    width: 100%;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-bottom: 50px;
-  }
 
 }
 
-@media (max-width:400px) {}
 
+@media (max-width:500px) {
+
+
+  .bilder .bilde2 img{
+height: 249px;
+
+
+  }
+
+  .bilder .bilde1 img{
+    height: 200px;
+  }
+ 
+ }
 
 
 
@@ -534,15 +516,4 @@ body {
 
 
 }
-
-
-
-
-
-@media (min-width: 992px) {}
-
-
-
-@media (min-width: 1200px) {}
-
 /* MEDIA QUERY SLUTT ---------------------------------------------------------------------------------------------------------------*/

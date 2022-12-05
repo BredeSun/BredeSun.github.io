@@ -208,13 +208,12 @@ body {
 .flex-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   justify-content: normal;
   align-items: normal;
   align-content: normal;
   margin-top: 15%;
   background-color: rgb(255, 255, 255);
-  width: auto;
+  width: 100%;
 }
 
 .flex-container h3 {
@@ -362,11 +361,6 @@ body {
   }
 }
 
-  @media (min-width: 774px) {
-  
-
-  }
-
   @media (max-width: 576px) {
 
 
@@ -379,11 +373,11 @@ body {
   }
 
 
-  @media (min-width: 837px) {
+  @media (max-width: 320px) {
 
     .Overskrift h1 {
 
-      font-size: 800%;
+      font-size:100%;
       color: #fff;
       font-family: monospace;
       text-align: center;
@@ -403,10 +397,28 @@ body {
 
   }
 
-  @media (min-width: 992px) {}
+  @media (max-width: 768px) {
 
+    .Overskrift h1 {
 
+      font-size: 200%;
+      color: #fff;
+      font-family: monospace;
+      text-align: center;
+      margin: 5% 5% 0% 5%;
+    }
 
-  @media (min-width: 1200px) {}
+    .Overskrift p {
+      color: aliceblue;
+      font-size: 150%;
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 10;
+      margin-top: 1.5%;
+
+    }
+
+  }
 
   /* MEDIA QUERY SLUTT ---------------------------------------------------------------------------------------------------------------*/

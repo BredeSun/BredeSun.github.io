@@ -20,10 +20,15 @@ body {
   align-items: center;
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Bilder/pexels-eneida-nieves-905847.jpg');
+  /* Bildet er hentet fra: https://www.pexels.com/nb-no/bilde/sterk-varm-sexy-marked-905847 (Fotograf: Eneida Nieves) */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.INDEX-hero-indre {
+/*margin-bottom: 100px;*/
 }
 
 /*Styler Overskrift*/
@@ -38,7 +43,8 @@ body {
 .INDEX-hero p {
   color: white;
   font-size: 250%;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
+
 }
 /*Flex-container for "om oss" seksjon*/
 .INDEX-about-flexcontainer {
@@ -111,7 +117,7 @@ body {
     color: white;
     border-color: white;
     border-width: 1px;
-    margin-top: 20px;
+    margin-top: 62px;
     transition: all .5s ease;
     text-align: center;
     padding: 10px 30px;
@@ -120,6 +126,24 @@ body {
 
   /*Styling av effekter når man holder over "Utforsk" knapp*/
 .INDEX-booking-div2 button:hover {
+    cursor:pointer;
+    background-color: white;
+    color:black;
+  }
+
+  .INDEX-hero-indre button {
+    background-color: transparent;
+    font-size: large;
+    color: white;
+    border-color: white;
+    border-width: 1px;
+    margin-top: 20px;
+    transition: all .5s ease;
+    text-align: center;
+    padding: 10px 30px;
+    font-family: unset;
+  }
+  .INDEX-hero-indre button:hover {
     cursor:pointer;
     background-color: white;
     color:black;
@@ -145,12 +169,13 @@ body {
   align-items: center;
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Bilder/kokk.jpg');
+/* Bildet er hentet fra: https://www.pexels.com/nb-no/bilde/kokk-kjokken-matlaging-rett-5953496 (Fotograf: Anna Shvets) */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-/* -- Link til bildet: Bilde av Anna Shvets: https://www.pexels.com/nb-no/bilde/kokk-kjokken-matlaging-rett-5953496/--*/
+
 
 
 /* -- Overskiften, på bildet--*/
@@ -215,10 +240,7 @@ body {
 /* MENY - SLUTT ---------------------------------------------------------------------------------------------------------/*
 
 
-/* BOOKING - EMIL - START -----------------------------------------------------------------------------------------*/
-
-
-/*-------------------------------BOOKING START--------------------------------------*/
+/* BOOKING - START -----------------------------------------------------------------------------------------------------*/
 
 .BOOKING-hero {
   width: 100%;
@@ -227,7 +249,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /*Bilde hentet fra: https://www.pexels.com/photo/bridge-over-aker-river-near-buildings-5683079/ */
+  /*Bilde hentet fra: https://www.pexels.com/photo/bridge-over-aker-river-near-buildings-5683079 (Fotograf: Boris K) */
 
   background-image: linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.5)), url('/Bilder/akerbrygge.jpg');
   background-size: cover;
@@ -309,8 +331,6 @@ body {
 
 /*arrangemanger seksjon*/
 
-
-
 /*Styling av flexcontainer*/
 .BOOKING-arrangemanger-flexcontainer {
   background-color: rgb(83, 83, 87);
@@ -346,7 +366,6 @@ body {
 }
 
 /*Gavekort seksjon*/
-
 
 
 /*Styling av flex-container*/
@@ -385,7 +404,7 @@ body {
   color: white;
   border-color: white;
   border-width: 1px;
-  margin-top: 20px;
+  margin-top: 87px;
   transition: all .5s ease;
   text-align: center;
   padding: 10px 30px;
@@ -407,9 +426,9 @@ body {
 
 /* RESERVASJON SKJEMA - START -----------------------------------------------------------------------------------------*/
   
-  /*---------------------------------------------------Seksjon------------------------------------------------------------------*/
+/*-Seksjon --------------------------------*/
  
-  /*Setter text decoration på footer på epost og adressetag */
+/*Setter text decoration på footer på epost og adressetag */
   .epost:hover, .adresse:hover {
     text-decoration: underline;
   }
@@ -423,9 +442,9 @@ body {
     margin-bottom: 194px;
   }
   
-  /*------------------------------------------------- Info  side-----------------------------------------------------------------------*/
+/*-Info  side---------------------------------*/
 
-  /* Lager linjen inder skjema-valg, og teks tydelighet i boksene */
+/* Lager linjen inder skjema-valg, og teks tydelighet i boksene */
 
   #RegValg {
     font-weight: 700;
@@ -437,12 +456,13 @@ body {
    }
 
 
-   /* Klmupen som flytter seg utifra hvilke skjema som vises */
-    #klump{
+   /* Markør som flytter seg utifra hvilke skjema som vises */
+
+   #klump{
       content: '';
       height: 6px;
       width: 60px;
-      background: #abe9ee;
+      background: #ededed;
       border-radius: 60px 60px 0 0;
       position: absolute;
       bottom: 0;
@@ -450,10 +470,10 @@ body {
     }
 
 
-    /* Styling for div ("Knappene") posisjon og farge */
+/* Styling for div ("Knappene") posisjon og farge */
     .ReserverBord, .BookEvent{
       padding: 5px 12px;
-      background: linear-gradient(45deg,#90aaae,rgb(127, 149, 117));
+      background: linear-gradient(45deg,#727c7e,rgb(59, 62, 58));
       cursor: pointer;
       transition: 0.3s ease;
       margin-bottom: 10px;
@@ -465,7 +485,7 @@ body {
     }
 
 
-    /* Styling og possisjonering av pilen som går tilbake */
+  /* Styling og possisjonering av pilen som går tilbake */
     .tilbakeKnapp{ 
       color: white;
       position: absolute;
@@ -477,7 +497,7 @@ body {
     }
 
 
-    /* Styling av overskrift og paragraf på venstre side */
+  /* Styling av overskrift og paragraf på venstre side */
 
   .RegInfo {
     display: relative;
@@ -511,7 +531,7 @@ body {
   
   
   
-  /*--------------------------------------------------Utfyllingsskjema--------------------------------------------------------------------------*/
+  /*-Utfyllingsskjema-------------------------------*/
   
   /* Posisjon og størrelse på skjema div */
   
@@ -537,7 +557,7 @@ body {
     }
 
 
-    /* Størrelse på skjemaet */
+  /* Størrelse på skjemaet */
 
     .RegSkjema #form{
       width: 200%;
@@ -552,7 +572,7 @@ body {
       margin: auto;
     }
 
-    /* Gjemmer Event skjemaet */
+  /* Gjemmer Event skjemaet */
 
     #RegSkjemEvent {
       width: 100%;
@@ -561,7 +581,7 @@ body {
     }
 
 
-    /* Styling av inputboksene i skjemaene */
+  /* Styling av inputboksene i skjemaene */
 
     .RegSkjema label {
     margin-left: 10px;
@@ -611,6 +631,10 @@ body {
 
 /* RESERVASJON SKJEMA - END ----------------------------------------------------------------------------------------------*/
 
+
+
+
+
 /*MEDIA QUERY - START ---------------------------------------------------------------------------------------------------------*/
 
 
@@ -648,11 +672,11 @@ body {
  .Meny-hero h1{
   font-size: 40px;
  }
-
-
 /*---MENY SLUTT-------------------*/
 
-  /*---RESERVASJONER START----------*/
+
+/*---RESERVASJONER START----------*/
+
   .Reservationsreservasjoner{
     width: 100%;
   }
@@ -677,6 +701,7 @@ body {
 
   }
   /*---RESERVASJONER SLUTT-- --------*/
+
 
   /*---REGSKJEMA START-- --------*/
 
@@ -703,12 +728,26 @@ body {
     padding: 0;
     margin-left: 5px;
   }
+  /*---REGSKJEMA SLUTT-- --------*/
+}
+/*Iphone-bilder*/
+@media (max-width: 428px) {
+
+  .INDEX-booking-div1 img{
+height: 220px;
+
+  }
+}
+
+@media (max-width: 428px) {
+
+  .INDEX-about-div2 img{
+    height: 290px;
+  }
 }
 
 @media (max-width: 576px) { /*Small devices (landscape phones, 576px and up)---------------------------------------------------*/
 
-  /*---NAV BAR-------------------*/
-  /*---NAV BAR SLUTT-------------*/
   /*----INDEX START---------------*/
 
    .INDEX-hero h1{
@@ -794,8 +833,8 @@ body {
   /*---REGSKJEMA SLUTT-- --------*/
 }
 
-
-@media (max-width: 768px) { /* Medium devices (tablets, 768px and up) -------------------------------------------------------- */
+/* Medium devices (tablets, 768px and up) -------------------------------------------------------- */
+@media (max-width: 768px) { 
 
   /*---INDEX START-------------------*/
   .INDEX-about-div2 img, .INDEX-booking-div1 img{
@@ -821,7 +860,7 @@ body {
 
   /*---BOOKING SLUTT------------------*/
 
-   /*Tilpasser booking side til mobiltelefoner*/
+   /*Styler alle bildene i booking siden slik at de tilpasses til ulike skjermer*/
    .BOOKING-info-div2 img, .BOOKING-arrangemanger-div2 img, .BOOKING-gavekort-div1 img {
     width: 100%;
   }
@@ -846,7 +885,6 @@ body {
     min-height: 100vh;
     background-attachment: scroll;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Bilder/akerbrygge.jpg');
   }
 
     /*---BOOKING SLUTT------------------*/
@@ -906,7 +944,7 @@ body {
   /*---REGSKJEMA START-- --------*/
 
   .Reservation{
-    flex-direction: column;
+    flex-direction: row;
     
   }
 
@@ -936,12 +974,6 @@ body {
 
 @media (max-width: 992px) { /* Large devices (desktops, 992px and up) --------------------------------------------------------*/
 
-  /*---NAV BAR----------------------*/
-  /*---NAV BAR SLUTT----------------*/
-
-  /*---INDEX START------------------*/
-  /*---INDEX SLUTT-------------------*/
-
   /*---MENY START--------------------*/
 
   .MenyContainer,
@@ -965,12 +997,12 @@ body {
 }
 
 /* X-Large devices (large desktops, 1200px and up)---------------------------------------------- */
-@media (max-width: 1200px) { 
+@media (max-width: 1200px) {
 
   /*---REGSKJEMA START-- --------*/
 
   .Reservation{
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .RegInfo {
@@ -994,18 +1026,5 @@ body {
   }
 }
 /*---REGSKJEMA SLUTT-- --------*/
-
-
-@media (max-width: 1400px) { /* XX-Large devices (larger desktops, 1400px and up) --------------------------------------------*/ 
-  /*---NAV BAR----------------------*/
-  /*---NAV BAR SLUTT----------------*/
-  /*---INDEX START------------------*/
-  /*---INDEX SLUTT------------------*/
-  /*---MENY START-------------------*/
-  /*---MENY SLUTT-------------------*/
-  /*---RESERVASJONER START----------*/
-  /*---RESERVASJONER SLUTT-- --------*/
-
-}
 
 /*MEDIA QUERY - SLUTT ---------------------------------------------------------------------------------------------------------*/
