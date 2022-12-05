@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Bilder/pexels-eneida-nieves-905847.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Bilder/pexels-eneida-nieves-905847.jpg');
   /* Bildet er hentet fra: https://www.pexels.com/nb-no/bilde/sterk-varm-sexy-marked-905847 (Fotograf: Eneida Nieves) */
   background-size: cover;
   background-position: center center;
@@ -28,7 +28,7 @@ body {
 }
 
 .INDEX-hero-indre {
-/*margin-bottom: 100px;*/
+  /*margin-bottom: 100px;*/
 }
 
 /*Styler Overskrift*/
@@ -46,108 +46,116 @@ body {
   margin-bottom: 20px;
 
 }
+
 /*Flex-container for "om oss" seksjon*/
 .INDEX-about-flexcontainer {
-      background-color: white;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      text-align: left;
-      width: 100%;
-      padding-top: 100px;
-      padding-bottom: 80px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 
 /*Styler egenskaper til child*/
-.INDEX-about-flexcontainer > div {
-      width: 500px;
-      font-size: 20px;
-      padding: 30px;
+.INDEX-about-flexcontainer>div {
+  width: 500px;
+  font-size: 20px;
+  padding: 30px;
 }
+
 /*Styling av h2 element*/
 .INDEX-about-flexcontainer h2 {
-      color: black;
-      font-size: 1.5em;
+  color: black;
+  font-size: 1.5em;
 }
+
 /*Styling av p element*/
 .INDEX-about-flexcontainer p {
-      color: black;
-      padding-top: 10px;
+  color: black;
+  padding-top: 10px;
 }
 
 /*Setter størrelse på bildene i både about-flexcontainer og booking-flexcontainer*/
-.INDEX-booking-div1 img, .INDEX-about-div2 img {
+.INDEX-booking-div1 img,
+.INDEX-about-div2 img {
   height: 300px;
 }
+
 /*Styler hele flex-container*/
-  .INDEX-booking-flexcontainer {
-    background-color:#222;
-    display: flex;
-    flex-wrap:wrap-reverse;
-    justify-content: center;
-    align-content: center;
-    text-align: left;
-    width: 100%;
-    padding-top: 80px;
-    padding-bottom: 80px;
+.INDEX-booking-flexcontainer {
+  background-color: #222;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-content: center;
+  text-align: left;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
+
 /*Styler egenskaper til child*/
-.INDEX-booking-flexcontainer > div {
-    width: 500px;
-    font-size: 20px;
-    padding: 30px;
+.INDEX-booking-flexcontainer>div {
+  width: 500px;
+  font-size: 20px;
+  padding: 30px;
 }
 
 /*Styling av h3 element*/
 .INDEX-booking-flexcontainer h3 {
-    color: white;
-    font-size: 1.5em;
+  color: white;
+  font-size: 1.5em;
 }
 
 /*Styling av p element*/
 .INDEX-booking-flexcontainer p {
-    color: white;
-    padding-top: 10px;
+  color: white;
+  padding-top: 10px;
 
 }
-/*Styling av "Utforsk" knapp*/ 
+
+/*Styling av "Utforsk" knapp*/
 .INDEX-booking-div2 button {
-    background-color: transparent;
-    font-size: large;
-    color: white;
-    border-color: white;
-    border-width: 1px;
-    margin-top: 62px;
-    transition: all .5s ease;
-    text-align: center;
-    padding: 10px 30px;
-    font-family: unset;
-  }
+  background-color: transparent;
+  font-size: large;
+  color: white;
+  border-color: white;
+  border-width: 1px;
+  margin-top: 62px;
+  transition: all .5s ease;
+  text-align: center;
+  padding: 10px 30px;
+  font-family: unset;
+}
 
-  /*Styling av effekter når man holder over "Utforsk" knapp*/
+/*Styling av effekter når man holder over "Utforsk" knapp*/
 .INDEX-booking-div2 button:hover {
-    cursor:pointer;
-    background-color: white;
-    color:black;
-  }
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
 
-  .INDEX-hero-indre button {
-    background-color: transparent;
-    font-size: large;
-    color: white;
-    border-color: white;
-    border-width: 1px;
-    margin-top: 20px;
-    transition: all .5s ease;
-    text-align: center;
-    padding: 10px 30px;
-    font-family: unset;
-  }
-  .INDEX-hero-indre button:hover {
-    cursor:pointer;
-    background-color: white;
-    color:black;
-  }
+.INDEX-hero-indre button {
+  background-color: transparent;
+  font-size: large;
+  color: white;
+  border-color: white;
+  border-width: 1px;
+  margin-top: 20px;
+  transition: all .5s ease;
+  text-align: center;
+  padding: 10px 30px;
+  font-family: unset;
+}
+
+.INDEX-hero-indre button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
 
 
 /* INDEX - SLUTT ----------------------------------------------------------------------------------------------/*
@@ -157,7 +165,7 @@ body {
 /* -- Bakgrunnsbildet --*/
 .meny-body {
   background-color: #222;
- }
+}
 
 
 /* -- Hovedbildet --*/
@@ -168,8 +176,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Bilder/kokk.jpg');
-/* Bildet er hentet fra: https://www.pexels.com/nb-no/bilde/kokk-kjokken-matlaging-rett-5953496 (Fotograf: Anna Shvets) */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Bilder/kokk.jpg');
+  /* Bildet er hentet fra: https://www.pexels.com/nb-no/bilde/kokk-kjokken-matlaging-rett-5953496 (Fotograf: Anna Shvets) */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -195,7 +203,7 @@ body {
 
 
 /* -- Margin og padding på boksene -- */
-.MenyContainer div{
+.MenyContainer div {
   border-left: 1px #ccc solid;
   border-right: 1px #ccc solid;
   padding: 30px
@@ -208,7 +216,7 @@ body {
 }
 
 /* -- Styler overskrift over bokser-- */
-.MenyOverskriftTo h2{
+.MenyOverskriftTo h2 {
   border-bottom: 1px solid gainsboro;
 }
 
@@ -228,7 +236,7 @@ body {
   color: #ccc;
 }
 
-.MenyContainerBoks{
+.MenyContainerBoks {
   font-weight: 700;
   flex-basis: 25%;
   margin: 1%;
@@ -265,6 +273,7 @@ body {
   margin-bottom: 0.5em;
   font-size: 4em;
 }
+
 /*Styling av p element i hero*/
 .BOOKING-hero p {
   color: white;
@@ -286,6 +295,7 @@ body {
   padding: 10px 30px;
   font-family: unset;
 }
+
 /*Styling av knapp:hover i hero*/
 .BOOKING-hero button:hover {
   cursor: pointer;
@@ -309,21 +319,24 @@ body {
 }
 
 /*Styling av div*/
-.BOOKING-info-flexcontainer > div {
+.BOOKING-info-flexcontainer>div {
   width: 500px;
   font-size: 20px;
   padding: 30px;
 }
+
 /*Styling av h2 tag*/
 .BOOKING-info-flexcontainer h2 {
   color: black;
   font-size: 1.5em;
 }
+
 /*Styling av p tag*/
 .BOOKING-info-flexcontainer p {
   color: black;
   padding-top: 10px;
 }
+
 /*Styling av bilde i div*/
 .BOOKING-info-div2 img {
   height: 300px;
@@ -344,22 +357,25 @@ body {
 }
 
 /*Styling av div*/
-.BOOKING-arrangemanger-flexcontainer > div {
+.BOOKING-arrangemanger-flexcontainer>div {
   width: 800px;
   font-size: 20px;
   padding: 30px;
 }
+
 /*Styling av h3 element*/
 .BOOKING-arrangemanger-flexcontainer h3 {
   color: white;
   font-size: 1.5em;
-  text-align: center;
+  text-align: left;
 }
+
 /*Styling av p element*/
 .BOOKING-arrangemanger-flexcontainer p {
   color: white;
   padding-top: 15px;
 }
+
 /*Styling av bilde i div*/
 .BOOKING-arrangemanger-div2 img {
   height: 500px;
@@ -380,23 +396,27 @@ body {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
 /*Styling av div*/
 .BOOKING-gavekort-flexcontainer>div {
   width: 500px;
   font-size: 20px;
   padding: 30px;
 }
+
 /*Styling av h4 element*/
 .BOOKING-gavekort-flexcontainer h4 {
   color: white;
   font-size: 1.5em;
 }
+
 /*Styling av p element*/
 .BOOKING-gavekort-flexcontainer p {
   color: white;
   padding-top: 10px;
 
 }
+
 /*Styling av knapp*/
 .BOOKING-gavekort-div2 button {
   background-color: transparent;
@@ -410,12 +430,14 @@ body {
   padding: 10px 30px;
   font-family: unset;
 }
+
 /*Styling av knapp:hover*/
 .BOOKING-gavekort-div2 button:hover {
   cursor: pointer;
   background-color: white;
   color: black;
 }
+
 /*Styling av bilde i div*/
 .BOOKING-gavekort-div1 img {
   height: 300px;
@@ -425,208 +447,210 @@ body {
 
 
 /* RESERVASJON SKJEMA - START -----------------------------------------------------------------------------------------*/
-  
-/*-Seksjon --------------------------------*/
- 
-/*Setter text decoration på footer på epost og adressetag */
-  .epost:hover, .adresse:hover {
-    text-decoration: underline;
-  }
 
-  /* Setter alt innholdet på siden som flex */
-  .Reservation {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    font-family: Montserrat, Times, serif;
-    margin-bottom: 194px;
-  }
-  
+/*-Seksjon --------------------------------*/
+
+/*Setter text decoration på footer på epost og adressetag */
+.epost:hover,
+.adresse:hover {
+  text-decoration: underline;
+}
+
+/* Setter alt innholdet på siden som flex */
+.Reservation {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  font-family: Montserrat, Times, serif;
+  margin-bottom: 194px;
+}
+
 /*-Info  side---------------------------------*/
 
 /* Lager linjen inder skjema-valg, og teks tydelighet i boksene */
 
-  #RegValg {
-    font-weight: 700;
-    position: absolute;
-    display: flex;
-    border-bottom: 1px solid white;
-    margin-left: 22px;
+#RegValg {
+  font-weight: 700;
+  position: absolute;
+  display: flex;
+  border-bottom: 1px solid white;
+  margin-left: 22px;
 
-   }
+}
 
 
-   /* Markør som flytter seg utifra hvilke skjema som vises */
+/* Markør som flytter seg utifra hvilke skjema som vises */
 
-   #klump{
-      content: '';
-      height: 6px;
-      width: 60px;
-      background: #ededed;
-      border-radius: 60px 60px 0 0;
-      position: absolute;
-      bottom: 0;
-      left: 35px;
-    }
+#klump {
+  content: '';
+  height: 6px;
+  width: 60px;
+  background: #ededed;
+  border-radius: 60px 60px 0 0;
+  position: absolute;
+  bottom: 0;
+  left: 35px;
+}
 
 
 /* Styling for div ("Knappene") posisjon og farge */
-    .ReserverBord, .BookEvent{
-      padding: 5px 12px;
-      background: linear-gradient(45deg,#727c7e,rgb(59, 62, 58));
-      cursor: pointer;
-      transition: 0.3s ease;
-      margin-bottom: 10px;
-      
-    }
+.ReserverBord,
+.BookEvent {
+  padding: 5px 12px;
+  background: linear-gradient(45deg, #727c7e, rgb(59, 62, 58));
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 10px;
 
-    .ReserverBord{
-      margin-right: 5px;
-    }
+}
 
-
-  /* Styling og possisjonering av pilen som går tilbake */
-    .tilbakeKnapp{ 
-      color: white;
-      position: absolute;
-      font-weight: 700;
-      font-size:x-large;
-      margin-top: 10px;
-      margin-left: 20px;
-      
-    }
+.ReserverBord {
+  margin-right: 5px;
+}
 
 
-  /* Styling av overskrift og paragraf på venstre side */
+/* Styling og possisjonering av pilen som går tilbake */
+.tilbakeKnapp {
+  color: white;
+  position: absolute;
+  font-weight: 700;
+  font-size: x-large;
+  margin-top: 10px;
+  margin-left: 20px;
 
-  .RegInfo {
-    display: relative;
-    color: white;
-    margin-top: 100px;
-    margin-left: 80px;
-    width: 550px;
-    height: 550px;
-  }
-  
-  .RegInfo h1 {
-    height: fit-content;
-    margin-left: 20px;
-    font-size: 50px;
-    width: 300px;
-    border-radius: 5px 5px 5px 0px;
-  }
-  
-  .RegInfo p {
-    height: fit-content;
-    font-weight: 700;
-    color: white;
-    width: 250px;
-    margin-top: 25px;
-    margin-left: 20px;
-    text-align: left;
-    border: 1px solid transparent;
-    border-radius: 0px 0px 5px 5px ;
-  }
-  
-  
-  
-  
-  /*-Utfyllingsskjema-------------------------------*/
-  
-  /* Posisjon og størrelse på skjema div */
-  
-  .RegSkjema {
-    font-weight: 700;
-    display: flex;
-    flex-shrink: 1px;
-    margin-top: 80px;
-    margin-left: 200px;
-    width: 500px;
-    height: 550px;
-    padding-top: 5px;
-    padding-left: 5px;
-    color: white;
-    border: 1px solid transparent;
-    
-  }
-
-    .RegSkjema #RegSkjemBord {
-      width: 100%;
-      position: relative;
-
-    }
+}
 
 
-  /* Størrelse på skjemaet */
+/* Styling av overskrift og paragraf på venstre side */
 
-    .RegSkjema #form{
-      width: 200%;
-      position: relative;
-      display: flex;
-      margin: auto;
-      transition: 0.2s ease-in-out;
-    }
+.RegInfo {
+  display: relative;
+  color: white;
+  margin-top: 100px;
+  margin-left: 80px;
+  width: 550px;
+  height: 550px;
+}
 
-    #RegSkjemBord {
-      width: 100%;
-      margin: auto;
-    }
+.RegInfo h1 {
+  height: fit-content;
+  margin-left: 20px;
+  font-size: 50px;
+  width: 300px;
+  border-radius: 5px 5px 5px 0px;
+}
 
-  /* Gjemmer Event skjemaet */
+.RegInfo p {
+  height: fit-content;
+  font-weight: 700;
+  color: white;
+  width: 250px;
+  margin-top: 25px;
+  margin-left: 20px;
+  text-align: left;
+  border: 1px solid transparent;
+  border-radius: 0px 0px 5px 5px;
+}
 
-    #RegSkjemEvent {
-      width: 100%;
-      margin: auto;
-      display: none;
-    }
 
 
-  /* Styling av inputboksene i skjemaene */
 
-    .RegSkjema label {
-    margin-left: 10px;
-    font-family: Montserrat, Times, serif;
-    font-weight: 700;
-    }
-  
-    .RegSkjema input {
-    padding: 3px;
-    margin-left: 5px;
-    border-radius: 7px;
-    font-family: Montserrat, Times, serif;
-    font-weight: 700;
-    }
-  
-      #navn {
-      margin-top: 10px;
-      }
-    
-      #email{
-      width: 69%;
-      }
-  
-      #tlf{
-      width: 44%;
-      }
-  
-      #gjester {
-      width: 40px;
-      }
-  
-    .RegSkjema textarea {
-    padding: 4px;
-    margin-left: 5px;
-    border-radius: 7px;
-    font-family: Montserrat, Times, serif;
-    font-weight: 700;
-    width: 69%;
-    }
-  
-      #submit {
-      margin-bottom: 8px;
-      font-family: Montserrat, Times, serif;
-      font-weight: 700;
-      }
+/*-Utfyllingsskjema-------------------------------*/
+
+/* Posisjon og størrelse på skjema div */
+
+.RegSkjema {
+  font-weight: 700;
+  display: flex;
+  flex-shrink: 1px;
+  margin-top: 80px;
+  margin-left: 200px;
+  width: 500px;
+  height: 550px;
+  padding-top: 5px;
+  padding-left: 5px;
+  color: white;
+  border: 1px solid transparent;
+
+}
+
+.RegSkjema #RegSkjemBord {
+  width: 100%;
+  position: relative;
+
+}
+
+
+/* Størrelse på skjemaet */
+
+.RegSkjema #form {
+  width: 200%;
+  position: relative;
+  display: flex;
+  margin: auto;
+  transition: 0.2s ease-in-out;
+}
+
+#RegSkjemBord {
+  width: 100%;
+  margin: auto;
+}
+
+/* Gjemmer Event skjemaet */
+
+#RegSkjemEvent {
+  width: 100%;
+  margin: auto;
+  display: none;
+}
+
+
+/* Styling av inputboksene i skjemaene */
+
+.RegSkjema label {
+  margin-left: 10px;
+  font-family: Montserrat, Times, serif;
+  font-weight: 700;
+}
+
+.RegSkjema input {
+  padding: 3px;
+  margin-left: 5px;
+  border-radius: 7px;
+  font-family: Montserrat, Times, serif;
+  font-weight: 700;
+}
+
+#navn {
+  margin-top: 10px;
+}
+
+#email {
+  width: 69%;
+}
+
+#tlf {
+  width: 44%;
+}
+
+#gjester {
+  width: 40px;
+}
+
+.RegSkjema textarea {
+  padding: 4px;
+  margin-left: 5px;
+  border-radius: 7px;
+  font-family: Montserrat, Times, serif;
+  font-weight: 700;
+  width: 69%;
+}
+
+#submit {
+  margin-bottom: 8px;
+  font-family: Montserrat, Times, serif;
+  font-weight: 700;
+}
 
 
 /* RESERVASJON SKJEMA - END ----------------------------------------------------------------------------------------------*/
@@ -639,17 +663,17 @@ body {
 
 
 @media (max-width:320px) {
-  
+
   /*---INDEX START---------------*/
-  
+
 
   .INDEX-hero h1 {
     font-size: 20px;
   }
-  
+
   .INDEX-hero p {
     font-size: 10px;
-    
+
   }
 
 
@@ -665,21 +689,31 @@ body {
     margin-right: auto;
   }
 
- .Meny-hero p{
-  font-size: 20px;
- }
+  .Meny-hero p {
+    font-size: 20px;
+  }
 
- .Meny-hero h1{
-  font-size: 40px;
- }
-/*---MENY SLUTT-------------------*/
+  .Meny-hero h1 {
+    font-size: 40px;
+  }
+
+  .BOOKING-arrangemanger-div2 img {
+    height: 100%;
+  }
 
 
-/*---RESERVASJONER START----------*/
+  /*---MENY SLUTT-------------------*/
 
-  .Reservationsreservasjoner{
+  /*---BOOKING START ------------------*/
+
+
+  /*---BOOKING SLUTT ------------------*/
+
+  /*---RESERVASJONER START----------*/
+  .Reservationsreservasjoner {
     width: 100%;
   }
+
   .ReservationsHeader h1 {
     font-size: 60px;
     color: rgb(255, 255, 255);
@@ -700,12 +734,13 @@ body {
     width: 200px;
 
   }
+
   /*---RESERVASJONER SLUTT-- --------*/
 
 
   /*---REGSKJEMA START-- --------*/
 
-  .Reservation{
+  .Reservation {
     flex-direction: column;
   }
 
@@ -728,36 +763,25 @@ body {
     padding: 0;
     margin-left: 5px;
   }
+
   /*---REGSKJEMA SLUTT-- --------*/
 }
-/*Iphone-bilder*/
-@media (max-width: 428px) {
 
-  .INDEX-booking-div1 img{
-height: 220px;
 
-  }
-}
 
-@media (max-width: 428px) {
-
-  .INDEX-about-div2 img{
-    height: 290px;
-  }
-}
-
-@media (max-width: 576px) { /*Small devices (landscape phones, 576px and up)---------------------------------------------------*/
+@media (max-width: 576px) {
+  /*Small devices (landscape phones, 576px and up)---------------------------------------------------*/
 
   /*----INDEX START---------------*/
 
-   .INDEX-hero h1{
+  .INDEX-hero h1 {
     font-size: 30px;
-   }
+  }
 
-   .INDEX-hero p{
+  .INDEX-hero p {
     font-size: 20px;
-   }
-  
+  }
+
   /*---INDEX SLUTT-----------------*/
 
   /*---MENY START------------------*/
@@ -769,13 +793,13 @@ height: 220px;
     margin-right: auto;
   }
 
- .Meny-hero p{
-  font-size: 20px;
- }
+  .Meny-hero p {
+    font-size: 20px;
+  }
 
- .Meny-hero h1{
-  font-size: 40px;
- }
+  .Meny-hero h1 {
+    font-size: 40px;
+  }
 
 
   /*---MENY SLUTT-------------------*/
@@ -807,7 +831,7 @@ height: 220px;
 
   /*---REGSKJEMA START-- --------*/
 
-  .Reservation{
+  .Reservation {
     flex-direction: column;
   }
 
@@ -830,56 +854,59 @@ height: 220px;
     padding: 0;
     margin-left: 10px;
   }
+
   /*---REGSKJEMA SLUTT-- --------*/
 }
 
 /* Medium devices (tablets, 768px and up) -------------------------------------------------------- */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
 
   /*---INDEX START-------------------*/
-  .INDEX-about-div2 img, .INDEX-booking-div1 img{
+  .INDEX-about-div2 img,
+  .INDEX-booking-div1 img {
     width: 100%;
+    height: 100%;
   }
-  
-  .INDEX-hero h1{
+
+  .INDEX-hero h1 {
     font-size: 40px;
-   }
+  }
 
-   .INDEX-hero p{
+  .INDEX-hero p {
     font-size: 20px;
-   }
+  }
 
-   .INDEX-hero {
+  .INDEX-hero {
     width: auto;
     min-height: 100vh;
     background-attachment: scroll;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Bilder/pexels-pizza-liten.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Bilder/pexels-pizza-liten.jpg');
   }
+
   /*---INDEX SLUTT------------------*/
 
-  /*---BOOKING SLUTT------------------*/
+  /*---BOOKING START ------------------*/
 
-   /*Styler alle bildene i booking siden slik at de tilpasses til ulike skjermer*/
-   .BOOKING-info-div2 img, .BOOKING-arrangemanger-div2 img, .BOOKING-gavekort-div1 img {
+  /*Styler alle bildene i booking siden slik at de tilpasses til ulike skjermer*/
+  .BOOKING-info-div2 img,
+  .BOOKING-arrangemanger-div2 img,
+  .BOOKING-gavekort-div1 img {
     width: 100%;
+    height: 100%;
   }
 
-  /*Styler height til bilde i arrangemanger*/
-  .BOOKING-arrangemanger-div2 img {
-      height: 300px;
-  }
-  
   /*Styling av h element i hero*/
-  .BOOKING-hero h1{
+  .BOOKING-hero h1 {
     font-size: 40px;
-   }
-   /*Styling av p element i hero*/
-  .BOOKING-hero p{
-    font-size: 20px;
-   }
+  }
 
-   /*Gjør slik at hero bildet passer på mobil*/
+  /*Styling av p element i hero*/
+  .BOOKING-hero p {
+    font-size: 20px;
+  }
+
+  /*Gjør slik at hero bildet passer på mobil*/
   .BOOKING-hero {
     width: auto;
     min-height: 100vh;
@@ -887,7 +914,8 @@ height: 220px;
     background-size: cover;
   }
 
-    /*---BOOKING SLUTT------------------*/
+
+  /*---BOOKING SLUTT------------------*/
 
 
   /*---MENY START-------------------*/
@@ -899,21 +927,21 @@ height: 220px;
     margin-right: auto;
   }
 
- .Meny-hero p{
-  font-size: 20px;
- }
+  .Meny-hero p {
+    font-size: 20px;
+  }
 
- .Meny-hero h1{
-  font-size: 40px;
- }
+  .Meny-hero h1 {
+    font-size: 40px;
+  }
 
- .Meny-hero {
-  width: auto;
-  min-height: 100vh;
-  background-attachment: scroll;
-  background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Bilder/kokkLiten.jpg');
-}
+  .Meny-hero {
+    width: auto;
+    min-height: 100vh;
+    background-attachment: scroll;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Bilder/kokkLiten.jpg');
+  }
 
   /*---MENY SLUTT-------------------*/
 
@@ -939,13 +967,14 @@ height: 220px;
     width: 350px;
 
   }
+
   /*---RESERVASJONER SLUTT-- --------*/
 
   /*---REGSKJEMA START-- --------*/
 
-  .Reservation{
+  .Reservation {
     flex-direction: row;
-    
+
   }
 
   .RegInfo {
@@ -972,7 +1001,8 @@ height: 220px;
   /*---REGSKJEMA SLUTT-- --------*/
 }
 
-@media (max-width: 992px) { /* Large devices (desktops, 992px and up) --------------------------------------------------------*/
+@media (max-width: 992px) {
+  /* Large devices (desktops, 992px and up) --------------------------------------------------------*/
 
   /*---MENY START--------------------*/
 
@@ -984,13 +1014,13 @@ height: 220px;
     margin-right: auto;
   }
 
- .Meny-hero p{
-  font-size: 20px;
- }
+  .Meny-hero p {
+    font-size: 20px;
+  }
 
- .Meny-hero h1{
-  font-size: 40px;
- }
+  .Meny-hero h1 {
+    font-size: 40px;
+  }
 
   /*---MENY SLUTT--------------------*/
 
@@ -1001,7 +1031,7 @@ height: 220px;
 
   /*---REGSKJEMA START-- --------*/
 
-  .Reservation{
+  .Reservation {
     flex-direction: row;
   }
 
@@ -1025,6 +1055,7 @@ height: 220px;
     margin-left: 10px;
   }
 }
+
 /*---REGSKJEMA SLUTT-- --------*/
 
 /*MEDIA QUERY - SLUTT ---------------------------------------------------------------------------------------------------------*/

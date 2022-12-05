@@ -195,6 +195,7 @@ a:hover {
 /* NAVNBAR - SLUTT -----------------------------------------------------------------------------------------------*/
 
 /* Bakgrunnsfarge animation -----------------------------------------------------------------------------------------------*/
+
 @keyframes color {
   0% {
     background: #ff493c;
@@ -316,6 +317,7 @@ body {
 
 }
 
+/* Styling button */
 .myButton {
   background-color: transparent;
   border: 1px solid hsl(204, 55%, 36%);
@@ -427,7 +429,6 @@ body {
   }
 
 
-
 }
 
 
@@ -435,13 +436,13 @@ body {
 
 
   .bilder .bilde2 img{
-height: 249px;
+height: 100%;
 
 
   }
 
   .bilder .bilde1 img{
-    height: 200px;
+    height: 100%;
   }
  
  }
